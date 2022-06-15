@@ -42,9 +42,9 @@ header {
   align-items: center;
   width: 100vw;
   height: 4.5rem;
-  background-color: #1e1f1d00;
   font-family: 'Kdam Thmor Pro', sans-serif;
   z-index: 3;
+  transition: background-color 0.5s ease-out;
 
   img {
     height: 4rem;
@@ -133,7 +133,7 @@ header {
     }
   }
 
-  .connexion {
+  .login {
     display: flex;
     justify-content: center;
     border: 2px solid #dbdbdb;
@@ -213,6 +213,10 @@ header {
       }
     }
   }
+}
+
+.underHome {
+  background-color: #1e1f1d;
 }
 
 /* Main container */

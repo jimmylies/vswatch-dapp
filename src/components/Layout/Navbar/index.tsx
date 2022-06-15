@@ -46,6 +46,11 @@ const Navbar = () => {
 
   document.addEventListener('scroll', () => {
     sal();
+    if (window.scrollY > 850) {
+      document.querySelector('header')?.classList.add('underHome');
+    } else if (window.scrollY <= 849) {
+      document.querySelector('header')?.classList.remove('underHome');
+    }
   });
 
   React.useEffect(() => {
@@ -72,29 +77,35 @@ const Navbar = () => {
           <a href='#'>twitter</a>
           <a href='#'>discord</a>
         </div>
-        <div className='connexion'>
-          <p>CONNEXION</p>
-          <div className='method'>
+        <div className='login'>
+          {isLoggedIn ? (
+            <div onClick={logOut}>Logout</div>
+          ) : (
             <>
-              <ExtensionLoginButton
-                callbackRoute={routeNames.dashboard}
-                loginButtonText={'Extension'}
-              />
-              <WebWalletLoginButton
-                callbackRoute={routeNames.dashboard}
-                loginButtonText={'Web wallet'}
-              />
-              <LedgerLoginButton
-                loginButtonText={'Ledger'}
-                callbackRoute={routeNames.dashboard}
-                className={'test-class_name'}
-              />
-              <WalletConnectLoginButton
-                callbackRoute={routeNames.dashboard}
-                loginButtonText={'Maiar'}
-              />
+              <p>CONNEXION</p>
+              <div className='method'>
+                <>
+                  <ExtensionLoginButton
+                    callbackRoute={routeNames.dashboard}
+                    loginButtonText={'Extension'}
+                  />
+                  <WebWalletLoginButton
+                    callbackRoute={routeNames.dashboard}
+                    loginButtonText={'Web wallet'}
+                  />
+                  <LedgerLoginButton
+                    loginButtonText={'Ledger'}
+                    callbackRoute={routeNames.dashboard}
+                    className={'test-class_name'}
+                  />
+                  <WalletConnectLoginButton
+                    callbackRoute={routeNames.dashboard}
+                    loginButtonText={'Maiar'}
+                  />
+                </>
+              </div>
             </>
-          </div>
+          )}
         </div>
       </header>
     </>
