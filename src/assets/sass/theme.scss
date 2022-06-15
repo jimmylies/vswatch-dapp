@@ -1,0 +1,312 @@
+/* Bootstrap overrides
+-------------------------------------------------- */
+
+/* Do not move the imports from here.
+Override Bootstrap variables only above.
+-------------------------------------------------- */
+
+// Bootstrap
+
+@import '~bootstrap/scss/bootstrap.scss';
+
+@import '~bootstrap/scss/reboot';
+
+// Font
+
+@import url('https://fonts.googleapis.com/css2?family=Kdam+Thmor+Pro&display=swap');
+
+*,
+*::before,
+*::after {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+::-webkit-scrollbar {
+  width: 0;
+  background: transparent;
+}
+
+html {
+  scroll-behavior: smooth;
+  overflow: scroll;
+  overflow-x: hidden;
+}
+
+/* Header */
+header {
+  position: fixed;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 100vw;
+  height: 4.5rem;
+  background-color: #1e1f1d00;
+  font-family: 'Kdam Thmor Pro', sans-serif;
+  z-index: 3;
+
+  img {
+    height: 4rem;
+    margin-left: 2rem;
+  }
+
+  a {
+    text-decoration: none;
+    color: #dbdbdb;
+
+    &:hover {
+      color: #dbdbdb;
+      text-decoration: none;
+    }
+  }
+
+  nav {
+    display: flex;
+    justify-content: space-around;
+    width: 29vw;
+
+    a {
+      position: relative;
+      font-size: 1.2rem;
+      z-index: 1;
+      transition: color 0.25s ease-in;
+
+      &:hover {
+        color: #1e1f1d;
+      }
+
+      &::before {
+        content: '';
+        position: absolute;
+        z-index: -1;
+        top: 0;
+        bottom: 0;
+        left: -0.25em;
+        right: -0.25em;
+        background-color: #ecececbf;
+        transform-origin: center right;
+        transform: scaleX(0);
+        transition: transform 0.2s ease-in-out;
+      }
+
+      &:hover::before {
+        transform: scaleX(1);
+        transform-origin: center left;
+      }
+    }
+  }
+
+  .social {
+    display: flex;
+    justify-content: space-between;
+    width: 9rem;
+
+    a {
+      position: relative;
+      font-size: 1.1rem;
+      z-index: 1;
+      transition: color 0.25s ease-in;
+
+      &:hover {
+        color: #1e1f1d;
+      }
+
+      &::before {
+        content: '';
+        position: absolute;
+        z-index: -1;
+        top: 0;
+        bottom: 0;
+        left: -0.25em;
+        right: -0.25em;
+        background-color: #ecececbf;
+        transform-origin: center right;
+        transform: scaleX(0);
+        transition: transform 0.2s ease-in-out;
+      }
+
+      &:hover::before {
+        transform: scaleX(1);
+        transform-origin: center left;
+      }
+    }
+  }
+
+  .connexion {
+    display: flex;
+    justify-content: center;
+    border: 2px solid #dbdbdb;
+    padding: 0.1rem 1rem;
+    color: #dbdbdb;
+    border-radius: 15px;
+    cursor: pointer;
+    overflow: hidden;
+    transition: background-color 0.25s ease-in;
+
+    p {
+      position: relative;
+      margin-bottom: 0;
+      font-size: 1.1rem;
+      padding: 0.3rem 0.2rem;
+      z-index: 1;
+      transition: color 0.25s ease-in;
+
+      &:hover {
+        color: #1e1f1d;
+      }
+    }
+
+    &:hover {
+      background-color: #ecececbf;
+
+      p {
+        color: #1e1f1d;
+      }
+
+      .method {
+        display: flex;
+      }
+    }
+
+    .method {
+      position: absolute;
+      top: 1.8rem;
+      display: none;
+      flex-direction: column;
+      justify-content: center;
+      padding: 2rem;
+
+      button {
+        background-color: transparent !important;
+        border: 2px solid #dbdbdb !important;
+        border-radius: 15px;
+
+        position: relative;
+        font-size: 1.1rem;
+        z-index: 1;
+        transition: color 0.25s ease-in;
+        overflow: hidden;
+
+        &:hover {
+          color: #1e1f1d;
+        }
+
+        &::before {
+          content: '';
+          position: absolute;
+          z-index: -1;
+          top: -0.1rem;
+          bottom: -0.1rem;
+          left: -0.8rem;
+          right: -0.8rem;
+          background-color: #ecececbf;
+          transform-origin: center right;
+          transform: scaleX(0);
+          transition: transform 0.2s ease-in-out;
+        }
+
+        &:hover::before {
+          transform: scaleX(1);
+          transform-origin: center left;
+        }
+      }
+    }
+  }
+}
+
+/* Main container */
+
+.main-container {
+  .home {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background: url('../img/bg.jpg');
+    background-size: cover;
+    z-index: 1;
+
+    .text-focus-in {
+      -webkit-animation: text-focus-in 1s cubic-bezier(0.55, 0.085, 0.68, 0.53)
+        both;
+      animation: text-focus-in 1s cubic-bezier(0.55, 0.085, 0.68, 0.53) both;
+    }
+    .catchphrase {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin: 30vh 0 0 5vw;
+      width: 65%;
+      font-size: 4vw;
+      font-family: 'Kdam Thmor Pro', sans-serif;
+      color: #dbdbdbb4;
+    }
+
+    @-webkit-keyframes text-focus-in {
+      0% {
+        -webkit-filter: blur(12px);
+        filter: blur(12px);
+        opacity: 0;
+      }
+      100% {
+        -webkit-filter: blur(0px);
+        filter: blur(0px);
+        opacity: 1;
+      }
+    }
+    @keyframes text-focus-in {
+      0% {
+        -webkit-filter: blur(12px);
+        filter: blur(12px);
+        opacity: 0;
+      }
+      100% {
+        -webkit-filter: blur(0px);
+        filter: blur(0px);
+        opacity: 1;
+      }
+    }
+  }
+
+  .project {
+    position: relative;
+    top: 100vh;
+    width: 100vw;
+    min-height: 100vh;
+    background: #dbdbdb;
+    z-index: 2;
+  }
+}
+
+/* Footer */
+footer {
+  position: relative;
+  top: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 20vh;
+  color: #dbdbdb;
+  background-color: #1e1f1d;
+  z-index: 2;
+
+  img {
+    height: 4rem;
+    margin-left: 2rem;
+  }
+
+  .catchphrase {
+    padding-top: 1rem;
+
+    font-size: 1.1rem;
+    font-weight: 600;
+  }
+
+  .copyright {
+    padding-top: 1rem;
+  }
+}
