@@ -46,10 +46,18 @@ const Navbar = () => {
 
   document.addEventListener('scroll', () => {
     sal();
-    if (window.scrollY > 850) {
-      document.querySelector('header')?.classList.add('underHome');
-    } else if (window.scrollY <= 849) {
-      document.querySelector('header')?.classList.remove('underHome');
+
+    const header = document.querySelector('header');
+    const button = document.querySelectorAll('button');
+    if (window.scrollY >= window.innerHeight) {
+      header?.classList.add('underHome');
+      for (let i = 0; i < button.length; i++) {
+        button[i].classList.add('underHomeButton');
+      }
+      header?.lastElementChild?.classList.add('underHome');
+    } else if (window.scrollY < window.innerHeight) {
+      header?.classList.remove('underHome');
+      header?.lastElementChild?.classList.remove('underHome');
     }
   });
 
@@ -61,150 +69,52 @@ const Navbar = () => {
   }, []);
 
   return (
-    <>
-      <header>
-        <a href='#'>
-          <img src={logo} alt='logo' />
-        </a>
-        <nav>
-          <a href='#'>HOME</a>
-          <a href='#'>PROJECT</a>
-          <a href='#'>WATCHMAP</a>
-          <a href='#'>TEAM</a>
-          <a href='#'>FAQ</a>
-        </nav>
-        <div className='social'>
-          <a href='#'>twitter</a>
-          <a href='#'>discord</a>
-        </div>
-        <div className='login'>
-          {isLoggedIn ? (
-            <div onClick={logOut}>Logout</div>
-          ) : (
-            <>
-              <p>CONNEXION</p>
-              <div className='method'>
-                <>
-                  <ExtensionLoginButton
-                    callbackRoute={routeNames.dashboard}
-                    loginButtonText={'Extension'}
-                  />
-                  <WebWalletLoginButton
-                    callbackRoute={routeNames.dashboard}
-                    loginButtonText={'Web wallet'}
-                  />
-                  <LedgerLoginButton
-                    loginButtonText={'Ledger'}
-                    callbackRoute={routeNames.dashboard}
-                    className={'test-class_name'}
-                  />
-                  <WalletConnectLoginButton
-                    callbackRoute={routeNames.dashboard}
-                    loginButtonText={'Maiar'}
-                  />
-                </>
-              </div>
-            </>
-          )}
-        </div>
-      </header>
-    </>
-    // <>
-    //   <header data-sal='slide-up' data-sal-duration='800' id='home'>
-    //     <div className='header-left'>
-    //       <a href={routeNames.home} className='logo-header'>
-    //         <img src={logo} alt='logo' />
-    //       </a>
-    //       <div className='siteDapp'>
-    //         <a href={routeNames.home} className='page activePage'>
-    //           Website
-    //         </a>
-    //         <a href={routeNames.dashboard} className='page'>
-    //           Dapp
-    //         </a>
-    //       </div>
-    //     </div>
-    //     <nav>
-    //       <div
-    //         className='btn-connect'
-    //         onClick={() => {
-    //           if (isLoggedIn) {
-    //             logOut();
-    //           } else {
-    //             showMethod();
-    //           }
-    //         }}
-    //       >
-    //         {isLoggedIn ? (
-    //           'Logout'
-    //         ) : (
-    //           <>
-    //             {isMethod ? (
-    //               <>
-    //                 <ExtensionLoginButton
-    //                   callbackRoute={routeNames.dashboard}
-    //                   loginButtonText={'Extension'}
-    //                 />
-    //                 <WebWalletLoginButton
-    //                   callbackRoute={routeNames.dashboard}
-    //                   loginButtonText={'Web wallet'}
-    //                 />
-    //                 <LedgerLoginButton
-    //                   loginButtonText={'Ledger'}
-    //                   callbackRoute={routeNames.dashboard}
-    //                   className={'test-class_name'}
-    //                 />
-    //                 <WalletConnectLoginButton
-    //                   callbackRoute={routeNames.dashboard}
-    //                   loginButtonText={'Maiar'}
-    //                 />
-    //               </>
-    //             ) : (
-    //               'Connect Wallet'
-    //             )}
-    //           </>
-    //         )}
-    //       </div>
-    //       <a
-    //         href='https://discord.gg/qDHu9rC57Q'
-    //         target='_blanck'
-    //         className='social discord'
-    //       >
-    //         Discord
-    //       </a>
-    //       <a
-    //         href='https://twitter.com/ArchillectNFT/'
-    //         target='_blanck'
-    //         className='social twitter'
-    //       >
-    //         Twitter
-    //       </a>
-    //     </nav>
-    //   </header>
-    //   <div className='container-menu'>
-    //     {isDashboard && (
-    //       <>
-    //         <div className='container-arrow' onClick={displayMenu}>
-    //           <div className='not'>.</div>
-    //           <div className='not'>.</div>
-    //           <div className='not'>.</div>
-    //           <div className='arrow'></div>
-    //           <div className='not'>.</div>
-    //           <div className='not'>.</div>
-    //           <div className='not'>.</div>
-    //         </div>
-    //         <div className='menu'>
-    //           <a href='https://archillect-nft.com/#home'>HOME</a>
-    //           <a href='https://archillect-nft.com/#about'>ABOUT</a>
-    //           <a href='https://archillect-nft.com/#roadmap'>ROADMAP</a>
-    //           <a href='https://archillect-nft.com/#preview'>PREVIEW</a>
-    //           <a href='https://archillect-nft.com/#faq'>FAQ</a>
-    //           <a href='https://archillect-nft.com/#team'>TEAM</a>
-    //         </div>
-    //       </>
-    //     )}
-    //   </div>
-    // </>
+    <header>
+      <a href='#'>
+        <img src={logo} alt='logo' />
+      </a>
+      <nav>
+        <a href='#'>HOME</a>
+        <a href='#project'>PROJECT</a>
+        <a href='#watchmap'>WATCHMAP</a>
+        <a href='#team'>TEAM</a>
+        <a href='#faq'>FAQ</a>
+      </nav>
+      <div className='social'>
+        <a href='#'>Twitter</a>
+        <a href='#'>Discord</a>
+      </div>
+      <div className='login'>
+        {isLoggedIn ? (
+          <div onClick={logOut}>Logout</div>
+        ) : (
+          <>
+            <p>CONNEXION</p>
+            <div className='method'>
+              <>
+                <ExtensionLoginButton
+                  callbackRoute={routeNames.dashboard}
+                  loginButtonText={'Extension'}
+                />
+                <WebWalletLoginButton
+                  callbackRoute={routeNames.dashboard}
+                  loginButtonText={'Web wallet'}
+                />
+                <LedgerLoginButton
+                  loginButtonText={'Ledger'}
+                  callbackRoute={routeNames.dashboard}
+                  className={'test-class_name'}
+                />
+                <WalletConnectLoginButton
+                  callbackRoute={routeNames.dashboard}
+                  loginButtonText={'Maiar'}
+                />
+              </>
+            </div>
+          </>
+        )}
+      </div>
+    </header>
   );
 };
 

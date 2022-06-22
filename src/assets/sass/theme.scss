@@ -23,6 +23,10 @@ Override Bootstrap variables only above.
   box-sizing: border-box;
 }
 
+p {
+  margin-bottom: 0;
+}
+
 ::-webkit-scrollbar {
   width: 0;
   background: transparent;
@@ -219,6 +223,10 @@ header {
   background-color: #1e1f1d;
 }
 
+.underHomeButton {
+  background-color: #1e1f1d !important;
+}
+
 /* Main container */
 
 .main-container {
@@ -274,15 +282,89 @@ header {
     }
   }
 
-  .project {
+  .part {
     position: relative;
     top: 100vh;
     width: 100vw;
-    min-height: 100vh;
     background: #dbdbdb;
     z-index: 2;
+
+    .part-title {
+      padding-top: 5rem;
+      text-align: center;
+      font-size: 3rem;
+      font-family: 'Kdam Thmor Pro', sans-serif;
+    }
+
+    .pres {
+      padding-top: 2rem;
+      margin: 0 auto;
+      width: 80%;
+      p {
+        font-size: 1.5rem;
+        font-family: 'Kdam Thmor Pro', sans-serif;
+      }
+    }
   }
 }
+
+/* FAQ */
+.faq-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+
+  .faq {
+    display: flex;
+    flex-wrap: wrap;
+    background-color: #222;
+    margin: 0.7rem;
+    cursor: pointer;
+    font-size: 1.45rem;
+    font-family: 'Nunito', sans-serif;
+    width: 80%;
+
+    .question,
+    .answer {
+      position: relative;
+      padding: 1rem;
+      color: #dbdbdb;
+      width: 800%;
+    }
+
+    .answer {
+      display: none;
+    }
+
+    .answer.active {
+      display: block;
+    }
+
+    .answer a {
+      position: relative;
+      text-decoration: none;
+      color: var(--base);
+    }
+
+    .answer a::before {
+      content: '';
+      position: absolute;
+      left: 50%;
+      bottom: 0;
+      width: 100%;
+      height: 2px;
+      background-color: var(--base);
+      transform-origin: center;
+      transform: translate(-50%, 0) scaleX(0);
+      transition: transform 0.3s ease-in-out;
+    }
+  }
+}
+
+// .answer a:hover::before {
+//   transform: translate(-50%, 0) scaleX(1);
+// }
 
 /* Footer */
 footer {
@@ -293,10 +375,10 @@ footer {
   justify-content: center;
   align-items: center;
   width: 100%;
-  height: 20vh;
   color: #dbdbdb;
   background-color: #1e1f1d;
   z-index: 2;
+  padding: 0.8rem 0;
 
   img {
     height: 4rem;
