@@ -63,9 +63,6 @@ const Home = () => {
                 ?.querySelectorAll('p')[0]
                 .classList.toggle('display-pres');
               event.currentTarget?.parentElement
-                ?.querySelector('.icons')
-                ?.classList.toggle('display-pres');
-              event.currentTarget?.parentElement
                 ?.querySelector('.container-supply')
                 ?.classList.toggle('display-pres');
             }}
@@ -101,11 +98,6 @@ const Home = () => {
             <br />3 • Working with qualified people, delivering high quality
             products and services.
           </p>
-          <div className='icons'>
-            <img src={idea} alt='idea' />
-            <img src={loupe} alt='loupe' />
-            <img src={chart} alt='chart' />
-          </div>
           <h2
             onClick={(event) => {
               event.currentTarget?.parentElement
@@ -155,6 +147,37 @@ const Home = () => {
               </div>
             </div>
           </p>
+          <h2
+            onClick={(event) => {
+              event.currentTarget?.parentElement
+                ?.querySelectorAll('p')[2]
+                .classList.toggle('display-pres');
+            }}
+          >
+            ▼ Watch Box
+          </h2>
+          <p>
+            In order not to influence the dirty public on sales and to keep a
+            little suspense on the different models of watches, we opted for a
+            case sft when we proceed with mint.
+            <br />
+            <br />
+            This case sft will burn on the VSWatch website and the smart
+            contract will automatically send you a random watch model.
+            <br />
+            <br />
+            1 SFT = 1 WATCH BOX
+            <br />1 WATCH BOX = 1 WATCH NFT
+            <br />
+            <br />
+            This strategy will allow us to delay but also to avoid a drop in the
+            price for our holders.
+          </p>
+          <div className='icons'>
+            <img src={idea} alt='idea' />
+            <img src={loupe} alt='loupe' />
+            <img src={chart} alt='chart' />
+          </div>
         </div>
         <div className='bande'></div>
       </div>

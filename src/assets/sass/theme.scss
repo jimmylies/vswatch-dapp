@@ -309,6 +309,10 @@ header {
       }
 
       p {
+        margin-bottom: 4rem !important;
+      }
+
+      p {
         font-size: 1.2rem;
         font-family: 'Kdam Thmor Pro', sans-serif;
 
@@ -333,7 +337,7 @@ header {
       }
 
       .container-supply {
-        margin-top: 4rem;
+        margin: 4rem 0;
         .supply {
           display: flex;
           justify-content: center;
