@@ -50,11 +50,13 @@ const Home = () => {
 
   let number = 0;
 
-  const interval = setInterval(function () {
-    if (nb2022) nb2022.innerHTML = '' + number;
-    if (number >= 2022) clearInterval(interval);
-    number += 6;
-  }, 2);
+  React.useEffect(() => {
+    const interval = setInterval(function () {
+      if (nb2022) nb2022.innerHTML = '' + number;
+      if (number >= 2022) clearInterval(interval);
+      number += 6;
+    }, 2);
+  }, []);
 
   return (
     <div className='main-container'>
