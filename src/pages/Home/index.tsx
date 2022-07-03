@@ -331,10 +331,10 @@ const Home = () => {
               Do you have partnerships with Elrond projects?
             </div>
             <div className='answer'>
-              For now no. We have identified the different projects with which
-              we share the same values and the strategies of partnerships with
-              each one. Partnerships will be announced as the project
-              progresses.
+              For the moment we are discussing with some projects. We have
+              identified the different projects with which we share the same
+              values and the strategies of partnerships with each one.
+              Partnerships will be announced as the project progresses.
               <br />
               <br />
               We are open to discussion if you would like to work with us
