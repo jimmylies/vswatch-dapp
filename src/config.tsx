@@ -6,4 +6,4 @@ export const bech32contractAddress =
   '0000000000000000050092d15725d06975bbc67ddfdd17f37f65130a7659c947';
 export const revealMethod = '72657665616c'; // reveal
 
-export const dAppName = 'VsWatch NFT';
+export const dAppName = 'VSWatch NFT';
