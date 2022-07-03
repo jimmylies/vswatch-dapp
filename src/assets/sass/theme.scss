@@ -234,11 +234,32 @@ header {
     position: fixed;
     top: 0;
     left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     width: 100vw;
     height: 100vh;
     background: url('../img/bg.jpg');
     background-size: cover;
     z-index: 1;
+
+    .vs2022 {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      color: #dbdbdb;
+      font-family: 'Kdam Thmor Pro', sans-serif;
+
+      span {
+        font-size: 2.3rem;
+        line-height: 3rem;
+      }
+
+      .c2022 {
+        font-size: 3.9rem;
+      }
+    }
 
     .text-focus-in {
       -webkit-animation: text-focus-in 1s cubic-bezier(0.55, 0.085, 0.68, 0.53)
@@ -250,11 +271,11 @@ header {
       display: flex;
       justify-content: center;
       align-items: center;
-      margin: 30vh 0 0 5vw;
-      width: 65%;
-      font-size: 4vw;
+      font-size: 1.3rem;
       font-family: 'Kdam Thmor Pro', sans-serif;
       color: #dbdbdbb4;
+      text-align: center;
+      margin-top: 2rem;
     }
 
     @-webkit-keyframes text-focus-in {
@@ -577,9 +598,7 @@ footer {
 
   .home {
     .catchphrase {
-      margin: 45vh 0 0 5vw !important;
-      width: 80% !important;
-      font-size: 5vw !important;
+      font-size: 1.5rem !important;
     }
   }
 }
@@ -655,7 +674,7 @@ footer {
   }
   .home {
     .catchphrase {
-      font-size: 8vw !important;
+      font-size: 1.2rem !important;
     }
   }
 }

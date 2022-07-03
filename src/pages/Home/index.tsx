@@ -46,13 +46,27 @@ const Home = () => {
   //   sal();
   // }, []);
 
+  const nb2022 = document.querySelector('.c2022');
+
+  let number = 0;
+
+  const interval = setInterval(function () {
+    if (nb2022) nb2022.innerHTML = '' + number;
+    if (number >= 2022) clearInterval(interval);
+    number += 6;
+  }, 2);
+
   return (
     <div className='main-container'>
       <div className='home'>
-        <p className='catchphrase text-focus-in'>
-          The alliance between the technology of the future and a timeless
-          creation
-        </p>
+        <div className='vs2022'>
+          <div className='c2022'>0</div>
+          <span>VSWatch</span>
+          <p className='catchphrase text-focus-in'>
+            The alliance between the technology of the future and a timeless
+            creation
+          </p>
+        </div>
       </div>
       <div id='project' className='part'>
         <p className='part-title'>Project</p>
@@ -62,9 +76,6 @@ const Home = () => {
               event.currentTarget?.parentElement
                 ?.querySelectorAll('p')[0]
                 .classList.toggle('display-pres');
-              event.currentTarget?.parentElement
-                ?.querySelector('.container-supply')
-                ?.classList.toggle('display-pres');
             }}
           >
             ▼ Introduction
@@ -103,6 +114,9 @@ const Home = () => {
               event.currentTarget?.parentElement
                 ?.querySelectorAll('p')[1]
                 .classList.toggle('display-pres');
+              event.currentTarget?.parentElement
+                ?.querySelector('.container-supply')
+                ?.classList.toggle('display-pres');
             }}
           >
             ▼ Collection
@@ -128,25 +142,25 @@ const Home = () => {
             <span className='sw'>SW (Silver Watch) : 400 NFTs</span> <br />
             <span className='bw'>BW (Bronze Watch) : 600 NFTs</span> <br />
             <span className='cw'>CW (Common Watch) : 800 NFTs</span>
-            <div className='container-supply'>
-              <div className='supply'>
-                <FontAwesomeIcon icon={faArrowTurnUp} />
-                <span>Supply: 2022</span>
-                <FontAwesomeIcon icon={faArrowTurnDown} />
+          </p>
+          <div className='container-supply'>
+            <div className='supply'>
+              <FontAwesomeIcon icon={faArrowTurnUp} />
+              <span>Supply: 2022</span>
+              <FontAwesomeIcon icon={faArrowTurnDown} />
+            </div>
+            <div className='container-details'>
+              <div>
+                Presale <br />
+                500 SFTs <br />
+                0.75 $EGLD
               </div>
-              <div className='container-details'>
-                <div>
-                  Presale <br />
-                  500 SFTs <br />
-                  0.75 $EGLD
-                </div>
-                <div>
-                  Public sale <br />
-                  1522 SFTs <br />1 $EGLD
-                </div>
+              <div>
+                Public sale <br />
+                1522 SFTs <br />1 $EGLD
               </div>
             </div>
-          </p>
+          </div>
           <h2
             onClick={(event) => {
               event.currentTarget?.parentElement
