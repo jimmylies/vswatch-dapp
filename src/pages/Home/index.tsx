@@ -46,23 +46,21 @@ const Home = () => {
   //   sal();
   // }, []);
 
-  const nb2022 = document.querySelector('.c2022');
+  const [number, setNumber] = React.useState<number>(0);
 
-  let number = 0;
-
+  let value = 0;
   React.useEffect(() => {
-    const interval = setInterval(function () {
-      if (nb2022) nb2022.innerHTML = '' + number;
-      if (number >= 2022) clearInterval(interval);
-      number += 6;
-    }, 2);
+    const interval = setInterval(() => {
+      setNumber(value);
+      if (value < 2022) value += 6;
+    }, 1);
   }, []);
 
   return (
     <div className='main-container'>
       <div className='home'>
         <div className='vs2022'>
-          <div className='c2022'>0</div>
+          <div className='c2022'>{number}</div>
           <span>VSWatch</span>
           <p className='catchphrase text-focus-in'>
             The alliance between the technology of the future and a timeless
