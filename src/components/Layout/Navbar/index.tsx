@@ -1,10 +1,9 @@
 import React from 'react';
 import { DappUI, logout, useGetAccountInfo } from '@elrondnetwork/dapp-core';
+import sal from 'sal.js';
 import { routeNames } from 'routes';
 
 import logo from '../../../assets/img/logo.png';
-
-import sal from 'sal.js';
 
 const Navbar = () => {
   const { address } = useGetAccountInfo();
@@ -21,10 +20,6 @@ const Navbar = () => {
 
   const showMethod = () => {
     setIsMethod(true);
-  };
-
-  const logOut = () => {
-    logout(`${window.location.pathname}`);
   };
 
   const page = document.querySelectorAll('.page');
@@ -49,15 +44,28 @@ const Navbar = () => {
 
     const header = document.querySelector('header');
     const button = document.querySelectorAll('button');
-    if (window.scrollY >= window.innerHeight) {
-      header?.classList.add('underHome');
-      for (let i = 0; i < button.length; i++) {
-        button[i].classList.add('underHomeButton');
+    if (window.innerWidth < 1300) {
+      if (window.scrollY >= window.innerHeight - 200) {
+        header?.classList.add('underHome');
+        for (let i = 0; i < button.length; i++) {
+          button[i].classList.add('underHomeButton');
+        }
+        header?.lastElementChild?.classList.add('underHome');
+      } else if (window.scrollY < window.innerHeight - 200) {
+        header?.classList.remove('underHome');
+        header?.lastElementChild?.classList.remove('underHome');
       }
-      header?.lastElementChild?.classList.add('underHome');
-    } else if (window.scrollY < window.innerHeight) {
-      header?.classList.remove('underHome');
-      header?.lastElementChild?.classList.remove('underHome');
+    } else {
+      if (window.scrollY >= window.innerHeight) {
+        header?.classList.add('underHome');
+        for (let i = 0; i < button.length; i++) {
+          button[i].classList.add('underHomeButton');
+        }
+        header?.lastElementChild?.classList.add('underHome');
+      } else if (window.scrollY < window.innerHeight) {
+        header?.classList.remove('underHome');
+        header?.lastElementChild?.classList.remove('underHome');
+      }
     }
   });
 
@@ -81,12 +89,30 @@ const Navbar = () => {
         <a href='#faq'>FAQ</a>
       </nav>
       <div className='social'>
-        <a href='#'>Twitter</a>
-        <a href='#'>Discord</a>
+        <a
+          href='https://twitter.com/vswatch_club'
+          rel='noreferrer'
+          target='_blank'
+        >
+          Twitter
+        </a>
+        <a
+          href='https://discord.com/invite/gGsVBKNV9u'
+          rel='noreferrer'
+          target='_blank'
+        >
+          Discord
+        </a>
       </div>
       <div className='login'>
         {isLoggedIn ? (
-          <div onClick={logOut}>Logout</div>
+          <div
+            onClick={() => {
+              logout(`${window.location.pathname}`);
+            }}
+          >
+            Logout
+          </div>
         ) : (
           <>
             <p>CONNEXION</p>
