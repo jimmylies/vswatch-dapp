@@ -213,7 +213,7 @@ const Home = ({ category }) => {
       ) : (
         <>
           <div id='project' className='part'>
-            <p className='part-title'>Project</p>
+            <p className='part-title'>Projet</p>
             <div className='pres'>
               <h2
                 onClick={(event) => {
@@ -294,7 +294,7 @@ const Home = ({ category }) => {
               <div className='container-supply'>
                 <div className='supply'>
                   <FontAwesomeIcon icon={faArrowTurnUp} />
-                  <span>Supply: 2022</span>
+                  <span>Quantité: 2022</span>
                   <FontAwesomeIcon icon={faArrowTurnDown} />
                 </div>
                 <div className='container-details'>
@@ -319,7 +319,7 @@ const Home = ({ category }) => {
                     .classList.toggle('display-pres');
                 }}
               >
-                ▼ Watch Box
+                ▼ Ecrin
               </h2>
               <div className='sft-video'>
                 <video src={sft} autoPlay muted loop></video>
@@ -353,139 +353,6 @@ const Home = ({ category }) => {
           </div>
         </>
       )}
-      <div id='project' className='part'>
-        <p className='part-title'>Project</p>
-        <div className='pres'>
-          <h2
-            onClick={(event) => {
-              event.currentTarget?.parentElement
-                ?.querySelectorAll('p')[0]
-                .classList.toggle('display-pres');
-            }}
-          >
-            ▼ Introduction
-          </h2>
-          <p>
-            ValSan is a 3D collection of 2022 Watches. In this Watchpaper, you
-            will discover how the VSWatch team wants to offer you a new NFT
-            experience. The innovation of a title of ownership linked to an
-            object, here a watch, orchestrated by the technology of the
-            Blockchain. <br />
-            <br />
-            ValSan is the ambition to give birth to a new way of holding a
-            material good from a dematerialized tool, an NFT.
-            <br />
-            Commonly used for its artistic side or for P2E game creation
-            projects, VSWatch wants to highlight the clean use of an NFT in the
-            current world in order to have traceability on the transactions
-            performed, security and authenticity without flaw. Our long-term
-            ambition is to become Elrond’s first boutique of reference.
-            <br />
-            <br />
-            Thus, in order to become so, we will focus our development on
-            several important pillars:
-            <br />
-            <br />
-            1 • Having a committed and cohesive community that will be rewarded
-            for its support.
-            <br />
-            2 • Respect the deadlines and the various stages announced on the
-            Watchmap.
-            <br />3 • Working with qualified people, delivering high quality
-            products and services.
-          </p>
-          <h2
-            onClick={(event) => {
-              event.currentTarget?.parentElement
-                ?.querySelectorAll('p')[1]
-                .classList.toggle('display-pres');
-              event.currentTarget?.parentElement
-                ?.querySelector('.container-supply')
-                ?.classList.toggle('display-pres');
-            }}
-          >
-            ▼ Collection
-          </h2>
-          <p>
-            Hosted on the Elrond Blockchain, each NFT will be categorized by
-            different attributes (dial, bracelet, colors used), which will
-            establish a level of rarity between each model.
-            <br />
-            <br />
-            We chose to create a first collection of a 2022 supply to mark the
-            first series of VSWatch. The Smart Contract based on the Elrond
-            Blockchain technology will guarantee a random distribution of NFT
-            during the launch of our mint.
-            <br />
-            <br />
-            The first series will consist of 5 models:
-            <br />
-            <br />
-            <span className='dw'>DW (Diawond Watch) : 42 NFTs</span>
-            <br />
-            <span className='gw'>GW (Gold Watch) : 180 NFT</span> <br />
-            <span className='sw'>SW (Silver Watch) : 400 NFTs</span> <br />
-            <span className='bw'>BW (Bronze Watch) : 600 NFTs</span> <br />
-            <span className='cw'>CW (Common Watch) : 800 NFTs</span>
-          </p>
-          <div className='container-supply'>
-            <div className='supply'>
-              <FontAwesomeIcon icon={faArrowTurnUp} />
-              <span>Supply: 2022</span>
-              <FontAwesomeIcon icon={faArrowTurnDown} />
-            </div>
-            <div className='container-details'>
-              <div>
-                Presale <br />
-                500 SFTs <br />
-                0.75 $EGLD
-              </div>
-              <div>
-                Public sale <br />
-                1522 SFTs <br />1 $EGLD
-              </div>
-            </div>
-          </div>
-          <h2
-            onClick={(event) => {
-              event.currentTarget?.parentElement
-                ?.querySelectorAll('p')[2]
-                .classList.toggle('display-pres');
-              event.currentTarget?.parentElement
-                ?.querySelectorAll('.sft-video')[0]
-                .classList.toggle('display-pres');
-            }}
-          >
-            ▼ Watch Box
-          </h2>
-          <div className='sft-video'>
-            <video src={sft} autoPlay muted loop></video>
-          </div>
-          <p>
-            In order not to influence the dirty public on sales and to keep a
-            little suspense on the different models of watches, we opted for a
-            case sft when we proceed with mint.
-            <br />
-            <br />
-            This case sft will burn on the VSWatch website and the smart
-            contract will automatically send you a random watch model.
-            <br />
-            <br />
-            1 SFT = 1 WATCH BOX
-            <br />1 WATCH BOX = 1 WATCH NFT
-            <br />
-            <br />
-            This strategy will allow us to delay but also to avoid a drop in the
-            price for our holders.
-          </p>
-          <div className='icons'>
-            <img src={idea} alt='idea' />
-            <img src={loupe} alt='loupe' />
-            <img src={chart} alt='chart' />
-          </div>
-        </div>
-        <div className='bande'></div>
-      </div>
       <div id='watchmap' className='part'>
         <p className='part-title'>WATCHMAP</p>
         <div className='bande'></div>
