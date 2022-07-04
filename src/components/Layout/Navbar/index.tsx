@@ -5,7 +5,7 @@ import { routeNames } from 'routes';
 
 import logo from '../../../assets/img/logo.png';
 
-const Navbar = () => {
+const Navbar = ({ category, setCategory }) => {
   const { address } = useGetAccountInfo();
   const {
     ExtensionLoginButton,
@@ -82,11 +82,23 @@ const Navbar = () => {
         <img src={logo} alt='logo' />
       </a>
       <nav>
-        <a href='#'>HOME</a>
-        <a href='#project'>PROJECT</a>
-        <a href='#watchmap'>WATCHMAP</a>
-        <a href='#team'>TEAM</a>
-        <a href='#faq'>FAQ</a>
+        {category === 'English' ? (
+          <>
+            <a href='#'>HOME</a>
+            <a href='#project'>PROJECT</a>
+            <a href='#watchmap'>WATCHMAP</a>
+            <a href='#team'>TEAM</a>
+            <a href='#faq'>FAQ</a>
+          </>
+        ) : (
+          <>
+            <a href='#'>ACCUEIL</a>
+            <a href='#project'>PROJET</a>
+            <a href='#watchmap'>ROADMAP</a>
+            <a href='#team'>EQUIPE</a>
+            <a href='#faq'>FAQ</a>
+          </>
+        )}
       </nav>
       <div className='social'>
         <a
@@ -103,6 +115,22 @@ const Navbar = () => {
         >
           Discord
         </a>
+        <div className='language'>
+          <span>{category}</span>
+          <div>
+            <span
+              onClick={() => {
+                if (category === 'English') {
+                  setCategory('Français');
+                } else {
+                  setCategory('English');
+                }
+              }}
+            >
+              {category === 'English' ? 'Français' : 'English'}
+            </span>
+          </div>
+        </div>
       </div>
       <div className='login'>
         {isLoggedIn ? (
@@ -111,11 +139,11 @@ const Navbar = () => {
               logout(`${window.location.pathname}`);
             }}
           >
-            Logout
+            {category === 'English' ? 'Logout' : 'Déconnexion'}
           </div>
         ) : (
           <>
-            <p>CONNEXION</p>
+            <p>Connexion</p>
             <div className='method'>
               <>
                 <ExtensionLoginButton

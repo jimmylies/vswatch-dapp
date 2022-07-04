@@ -103,7 +103,54 @@ header {
   .social {
     display: flex;
     justify-content: space-between;
-    width: 9rem;
+    align-items: center;
+    width: 15rem;
+
+    .language {
+      display: flex;
+      align-items: center;
+      flex-direction: column;
+      padding: 0.2rem 0;
+      width: 5rem;
+      color: #dbdbdb;
+      background-color: transparent;
+      border: 2px solid #dbdbdb;
+      border-radius: 5px;
+
+      font-size: 1.1rem;
+      transition: background-color 0.25s ease-in;
+      cursor: pointer;
+      z-index: 1;
+
+      div {
+        display: none;
+        position: absolute;
+        top: 1.4rem;
+        padding: 2rem;
+
+        span {
+          width: 5rem;
+          padding: 0.2rem 0;
+          text-align: center;
+          background-color: #1b1d28;
+          border: 2px solid #dbdbdb;
+          border-radius: 5px;
+          transition: background-color 0.25s ease-in;
+
+          &:hover {
+            background-color: #6d6d6d;
+          }
+        }
+      }
+
+      &:hover {
+        background-color: #6d6d6d;
+
+        div:last-child {
+          display: flex;
+        }
+      }
+    }
 
     a {
       position: relative;
@@ -151,7 +198,7 @@ header {
       position: relative;
       margin-bottom: 0;
       font-size: 1.1rem;
-      padding: 0.3rem 0.2rem;
+      padding: 0.3rem 0.65rem;
       z-index: 1;
       transition: color 0.25s ease-in;
 
@@ -276,6 +323,7 @@ header {
       color: #dbdbdbb4;
       text-align: center;
       margin-top: 2rem;
+      padding: 0 0.2rem;
     }
 
     @-webkit-keyframes text-focus-in {
@@ -398,6 +446,16 @@ header {
             font-weight: 600;
             white-space: nowrap;
           }
+        }
+      }
+
+      .sft-video {
+        display: flex;
+        justify-content: center;
+        margin: 2rem 0;
+        video {
+          width: 20rem;
+          border-radius: 20px;
         }
       }
     }
@@ -587,12 +645,48 @@ footer {
       margin: 0.5rem 0 0.7rem 0;
     }
 
-    .login {
-      margin-top: 1rem;
+    .social {
+      .language {
+        position: relative;
+
+        div {
+          display: none;
+          position: absolute;
+          top: 0.5rem;
+          left: -2.1rem;
+          padding: 2rem;
+
+          span {
+            width: 5rem;
+            padding: 0.2rem 0;
+            text-align: center;
+            background-color: #1b1d28;
+            border: 2px solid #dbdbdb;
+            border-radius: 5px;
+            transition: background-color 0.25s ease-in;
+
+            &:hover {
+              background-color: #6d6d6d;
+            }
+          }
+        }
+
+        &:hover {
+          background-color: #6d6d6d;
+
+          div:last-child {
+            display: flex;
+          }
+        }
+      }
     }
 
-    .method {
-      top: 12.6rem !important;
+    .login {
+      margin-top: 1rem;
+
+      .method {
+        top: 13.25rem !important;
+      }
     }
   }
 
@@ -670,9 +764,15 @@ footer {
   header {
     nav {
       width: 90%;
+      a {
+        font-size: 1rem !important;
+      }
     }
   }
   .home {
+    .vs2022 {
+      margin-top: 3rem;
+    }
     .catchphrase {
       font-size: 1.2rem !important;
     }
