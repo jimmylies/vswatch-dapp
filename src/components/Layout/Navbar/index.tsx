@@ -171,7 +171,7 @@ const Navbar = ({ category, setCategory }) => {
       <div
         className='reduce-header'
         onClick={(event) => {
-          event.currentTarget.parentElement.classList.toggle('reduced');
+          event.currentTarget?.parentElement?.classList.toggle('reduced');
         }}
       >
         <div className=''></div>
