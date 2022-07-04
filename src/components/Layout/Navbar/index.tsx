@@ -168,6 +168,14 @@ const Navbar = ({ category, setCategory }) => {
           </>
         )}
       </div>
+      <div
+        className='reduce-header'
+        onClick={(event) => {
+          event.currentTarget.parentElement.classList.toggle('reduced');
+        }}
+      >
+        <div className=''></div>
+      </div>
     </header>
   );
 };
