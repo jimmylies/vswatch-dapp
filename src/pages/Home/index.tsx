@@ -24,24 +24,11 @@ import san from '../../assets/img/san.png';
 import theo from '../../assets/img/theo.png';
 import val from '../../assets/img/val.png';
 import work from '../../assets/img/work.png';
+import clock from '../../assets/img/clock.png';
 
 import sft from '../../assets/vid/sft.mp4';
 
 const Home = ({ category }) => {
-  // document.querySelectorAll('.part-item-faq').forEach((e) => {
-  //   e.addEventListener('click', () => {
-  //     const answer = e.lastElementChild;
-  //     if (answer != undefined) {
-  //       answer.classList.toggle('activeFaq');
-  //     }
-  //   });
-  // });
-
-  // const showAnswer = (event: any) => {
-  //   const answer = event.currentTarget.lastElementChild;
-  //   answer?.classList.toggle('activeFaq');
-  // };
-
   // document.addEventListener('scroll', () => {
   //   sal();
   // });
@@ -49,6 +36,12 @@ const Home = ({ category }) => {
   // React.useEffect(() => {
   //   sal();
   // }, []);
+
+  window.addEventListener('scroll', () => {
+    const scroll = window.pageYOffset;
+    const clock = document.querySelectorAll('.clock')[0] as HTMLDivElement;
+    clock.style.transform = `rotate(${scroll / 4}deg)`;
+  });
 
   const [number, setNumber] = React.useState<number>(0);
 
@@ -371,6 +364,52 @@ const Home = ({ category }) => {
       )}
       <div id='watchmap' className='part'>
         <p className='part-title'>WATCHMAP</p>
+        <div className='pres'>
+          <div className='roadmap'>
+            <div className='roadmap-item'>
+              <h2>Chap1: Start</h2>
+              <div className='steps'>
+                <span>• VSWatch settle on ElrondNetwork </span>
+                <span>• Socials: Twitter/Discord/Website/Instagram</span>
+                <span>• Opening of the watchlist to the public</span>
+                <span>• Various giveaways and games </span>
+                <span>• Watchpaper v1</span>
+                <span>• Network marketing</span>
+                <span>• First Reveal</span>
+              </div>
+            </div>
+            <div className='roadmap-item' id='fixed-elements'>
+              <h2>Chap2: Construction</h2>
+              <div className='steps'>
+                <span>• Partnerships with Elrond Projects</span>
+                <span>• Watchpaper v2</span>
+                <span>• Second Reveal</span>
+                <span>• Various giveaways and games </span>
+                <span>• Presale: First drop (WL/OG supply 500)</span>
+                <span>• Public sale: Second drop (supply 1522)</span>
+              </div>
+            </div>
+            <div className='roadmap-item'>
+              <h2>Chap3: Production</h2>
+              <div className='steps'>
+                <span>• Rewards for holders </span>
+                <span>• Lottery</span>
+                <span>• Watchpaper V3</span>
+                <span>• Burn of Watch box </span>
+                <span>• Partnership IRL</span>
+                <span>• Work on IRL Watch product</span>
+                <span>• Working on $VST token governance</span>
+              </div>
+            </div>
+            <div className='roadmap-item'>
+              <h2>Chap 4: Launch of our Store!</h2>
+            </div>
+          </div>
+          <div className='container-clock'>
+            <img src={clock} alt='clock' className='clock' />
+          </div>
+        </div>
+
         <div className='bande'></div>
       </div>
       {category === 'English' ? (

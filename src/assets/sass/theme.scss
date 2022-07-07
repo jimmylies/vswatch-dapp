@@ -316,7 +316,6 @@ header {
     height: 100vh;
     background: url('../img/bg.jpg');
     background-size: cover;
-    z-index: 1;
 
     .vs2022 {
       display: flex;
@@ -554,6 +553,48 @@ header {
       }
     }
 
+    .roadmap {
+      display: flex;
+      flex-direction: column;
+      justify-content: start;
+      align-items: center;
+      font-family: 'Kdam Thmor Pro', sans-serif;
+      width: 50%;
+
+      .roadmap-item {
+        padding: 0 0 50rem 0;
+
+        h2 {
+          margin-bottom: 1rem;
+        }
+
+        .steps {
+          display: flex;
+          flex-direction: column;
+
+          span {
+            margin: 0.5rem 0;
+            font-size: 1rem;
+          }
+        }
+      }
+    }
+
+    .container-clock {
+      position: fixed;
+      top: 30vh;
+      right: 0;
+      display: flex;
+      justify-content: center;
+      width: 60%;
+
+      z-index: 1;
+
+      img {
+        width: 40%;
+      }
+    }
+
     .container-team {
       display: flex;
       flex-direction: row;
@@ -594,6 +635,16 @@ header {
         }
       }
     }
+  }
+  z-index: 3;
+}
+
+#watchmap {
+  z-index: 0;
+
+  .pres {
+    display: flex;
+    flex-direction: row !important;
   }
 }
 
@@ -659,6 +710,7 @@ header {
   width: 100%;
   background-color: #1b1d28;
   margin-top: 7rem;
+  z-index: 3;
 }
 
 /* Footer */
@@ -672,7 +724,7 @@ footer {
   width: 100%;
   color: #dbdbdb;
   background-color: #1b1d28;
-  z-index: 2;
+  z-index: 4;
   padding: 5rem 0;
 
   img {
@@ -867,4 +919,13 @@ footer {
       font-size: 1.2rem !important;
     }
   }
+  
+  .container-clock {
+    display: none !important;
+  }
+
+  .roadmap {
+    width: 100% !important;
+  }
+  
 }

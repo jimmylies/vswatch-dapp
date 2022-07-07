@@ -17,7 +17,7 @@ const Footer = ({ category }) => {
         <>
           <p className='catchphrase'>
             L’alliance entre la technologie du futur et une création
-            intemporelle
+            intemporelle.
           </p>
           <p className='copyright'>©2022 VsWatch NFT - Tous droits réservés</p>
         </>
