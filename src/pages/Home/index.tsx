@@ -65,12 +65,25 @@ const Home = ({ category }) => {
       <div className='home'>
         <div className='vs2022'>
           <div className='c2022'>{number}</div>
-          <span>VSWatch</span>
+          <span>VSWATCH</span>
           <p className='catchphrase text-focus-in'>
             {category === 'English'
               ? 'The alliance between the technology of the future and a timeless creation.'
               : 'L’alliance entre la technologie du futur et une création intemporelle.'}
           </p>
+          <div className='watchpaper'>
+            <a
+              href={
+                category === 'English'
+                  ? '../../assets/docs/Watchpaper_EN.pdf'
+                  : '../../assets/docs/Watchpaper_FR.pdf'
+              }
+              target='_blank'
+              rel='noopener noreferrer'
+            >
+              Watchpaper
+            </a>
+          </div>
         </div>
       </div>
       {category === 'English' ? (
