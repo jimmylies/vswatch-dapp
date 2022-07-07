@@ -225,15 +225,19 @@ header {
       display: none;
       flex-direction: column;
       justify-content: center;
+      align-items: center;
       padding: 2rem;
 
-      button {
+      button,
+      .extension-login_noExtensionButtonWrapper.btn.btn-unlock.d-inline-block {
+        position: relative;
         background-color: transparent !important;
         border: 2px solid #dbdbdb !important;
         border-radius: 15px;
+        color: #dbdbdb;
+        width: 100%;
         background-color: #1b1d28 !important;
         white-space: nowrap;
-        position: relative;
         font-size: 1.1rem;
         z-index: 1;
         transition: color 0.25s ease-in;
@@ -329,6 +333,23 @@ header {
 
       .c2022 {
         font-size: 6rem;
+      }
+
+      .watchpaper {
+        width: 8rem;
+        padding: 0.6rem 0;
+        margin-top: 2rem;
+        text-align: center;
+        text-decoration: none;
+        color: #dbdbdb;
+        background-color: #1b1d28;
+        border: 2px solid #dbdbdb;
+        border-radius: 5px;
+        transition: background-color 0.25s ease-in;
+
+        &:hover {
+          background-color: #6d6d6d;
+        }
       }
     }
 
@@ -473,13 +494,28 @@ header {
         }
       }
 
-      .sft-video {
+      .container-watchbox {
         display: flex;
-        justify-content: center;
-        margin: 2rem 0;
-        video {
-          width: 20rem;
-          border-radius: 20px;
+        flex-direction: row;
+
+        .sft-video {
+          display: flex;
+          justify-content: center;
+          margin: 2rem 0;
+          video {
+            width: 30rem;
+            border-radius: 20px;
+          }
+        }
+
+        p {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          font-size: 1.2rem;
+          font-family: 'Kdam Thmor Pro', sans-serif;
+          margin: 0 5rem;
+          margin-bottom: 0 !important;
         }
       }
     }
@@ -645,7 +681,7 @@ footer {
   }
 
   .catchphrase {
-    padding-top: 1rem;
+    padding: 1rem;
 
     font-size: 1.1rem;
     font-weight: 600;
@@ -727,6 +763,26 @@ footer {
   .home {
     .catchphrase {
       font-size: 1.5rem !important;
+    }
+  }
+
+  .container-watchbox {
+    display: flex;
+    flex-direction: column !important;
+
+    .sft-video {
+      video {
+        width: 15rem !important;
+      }
+    }
+
+    p {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-size: 1.2rem;
+      font-family: 'Kdam Thmor Pro', sans-serif;
+      margin: 0 !important;
     }
   }
 }

@@ -71,19 +71,18 @@ const Home = ({ category }) => {
               ? 'The alliance between the technology of the future and a timeless creation.'
               : 'L’alliance entre la technologie du futur et une création intemporelle.'}
           </p>
-          <div className='watchpaper'>
-            <a
-              href={
-                category === 'English'
-                  ? '../../assets/docs/Watchpaper_EN.pdf'
-                  : '../../assets/docs/Watchpaper_FR.pdf'
-              }
-              target='_blank'
-              rel='noopener noreferrer'
-            >
-              Watchpaper
-            </a>
-          </div>
+          <a
+            className='watchpaper'
+            href={
+              category === 'English'
+                ? 'https://drive.google.com/file/d/1ei0QEZcMU7WqZCpft5LuZr6N_kM5u5rJ/view?usp=sharing'
+                : 'https://drive.google.com/file/d/1GBtD1tEp5LJz9rqCdD3hOIOEavfcqwMT/view?usp=sharing'
+            }
+            target='_blank'
+            rel='noreferrer'
+          >
+            Watchpaper
+          </a>
         </div>
       </div>
       {category === 'English' ? (
@@ -194,26 +193,28 @@ const Home = ({ category }) => {
               >
                 ▼ Watch Box
               </h2>
-              <div className='sft-video'>
-                <video src={sft} autoPlay muted loop></video>
+              <div className='container-watchbox'>
+                <div className='sft-video'>
+                  <video src={sft} autoPlay muted loop></video>
+                </div>
+                <p>
+                  In order not to influence the dirty public on sales and to
+                  keep a little suspense on the different models of watches, we
+                  opted for a case sft when we proceed with mint.
+                  <br />
+                  <br />
+                  This case sft will burn on the VSWatch website and the smart
+                  contract will automatically send you a random watch model.
+                  <br />
+                  <br />
+                  1 SFT = 1 WATCH BOX
+                  <br />1 WATCH BOX = 1 WATCH NFT
+                  <br />
+                  <br />
+                  This strategy will allow us to delay but also to avoid a drop
+                  in the price for our holders.
+                </p>
               </div>
-              <p>
-                In order not to influence the dirty public on sales and to keep
-                a little suspense on the different models of watches, we opted
-                for a case sft when we proceed with mint.
-                <br />
-                <br />
-                This case sft will burn on the VSWatch website and the smart
-                contract will automatically send you a random watch model.
-                <br />
-                <br />
-                1 SFT = 1 WATCH BOX
-                <br />1 WATCH BOX = 1 WATCH NFT
-                <br />
-                <br />
-                This strategy will allow us to delay but also to avoid a drop in
-                the price for our holders.
-              </p>
               <div className='icons'>
                 <img src={idea} alt='idea' />
                 <img src={loupe} alt='loupe' />

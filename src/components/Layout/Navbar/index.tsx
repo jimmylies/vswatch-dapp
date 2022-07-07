@@ -174,7 +174,7 @@ const Navbar = ({ category, setCategory }) => {
           event.currentTarget?.parentElement?.classList.toggle('reduced');
         }}
       >
-        <div className=''></div>
+        <div></div>
       </div>
     </header>
   );
