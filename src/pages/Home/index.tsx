@@ -41,6 +41,11 @@ const Home = ({ category }) => {
     const scroll = window.pageYOffset;
     const clock = document.querySelectorAll('.clock')[0] as HTMLDivElement;
     clock.style.transform = `rotate(${scroll / 4}deg)`;
+    if (scroll < 1000) {
+      clock.style.display = 'none';
+    } else {
+      clock.style.display = 'flex';
+    }
   });
 
   const [number, setNumber] = React.useState<number>(0);

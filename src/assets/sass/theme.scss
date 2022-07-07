@@ -46,7 +46,7 @@ header {
   align-items: center;
   width: 100vw;
   font-family: 'Kdam Thmor Pro', sans-serif;
-  z-index: 3;
+  z-index: 4;
   transition: background-color 0.5s ease-out;
 
   img {
@@ -562,7 +562,7 @@ header {
       width: 50%;
 
       .roadmap-item {
-        padding: 0 0 50rem 0;
+        padding: 0 0 10rem 0;
 
         h2 {
           margin-bottom: 1rem;
@@ -587,11 +587,11 @@ header {
       display: flex;
       justify-content: center;
       width: 60%;
-
-      z-index: 1;
+      z-index: 2;
 
       img {
-        width: 40%;
+        width: 30%;
+        display: none;
       }
     }
 
@@ -919,7 +919,7 @@ footer {
       font-size: 1.2rem !important;
     }
   }
-  
+
   .container-clock {
     display: none !important;
   }
@@ -927,5 +927,4 @@ footer {
   .roadmap {
     width: 100% !important;
   }
-  
 }
