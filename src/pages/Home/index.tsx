@@ -335,28 +335,30 @@ const Home = ({ category }) => {
               >
                 ▼ Ecrin
               </h2>
-              <div className='sft-video'>
-                <video src={sft} autoPlay muted loop></video>
+              <div className='container-watchbox'>
+                <div className='sft-video'>
+                  <video src={sft} autoPlay muted loop></video>
+                </div>
+                <p>
+                  Afin de ne pas influencer la public sale sur les ventes et
+                  pour garder un peu de suspens sur les différents modèles de
+                  montres, nous avons opté pour un SFT d’écrin lorsque nous
+                  procéderons au mint.
+                  <br />
+                  <br />
+                  Ce SFT d’écrin sera à burn sur le site VSWatch et le smart
+                  contract vous renverra automatiquement un modèle de montre
+                  aléatoire
+                  <br />
+                  <br />
+                  1 SFT = 1 ECRIN
+                  <br />1 ECRIN = 1 NFT MONTRE
+                  <br />
+                  <br />
+                  Cette stratégie nous permettra de temporiser mais aussi
+                  d’éviter une chute du prix pour nos holders.
+                </p>
               </div>
-              <p>
-                Afin de ne pas influencer la public sale sur les ventes et pour
-                garder un peu de suspens sur les différents modèles de montres,
-                nous avons opté pour un SFT d’écrin lorsque nous procéderons au
-                mint.
-                <br />
-                <br />
-                Ce SFT d’écrin sera à burn sur le site VSWatch et le smart
-                contract vous renverra automatiquement un modèle de montre
-                aléatoire
-                <br />
-                <br />
-                1 SFT = 1 ECRIN
-                <br />1 ECRIN = 1 NFT MONTRE
-                <br />
-                <br />
-                Cette stratégie nous permettra de temporiser mais aussi d’éviter
-                une chute du prix pour nos holders.
-              </p>
               <div className='icons'>
                 <img src={idea} alt='idea' />
                 <img src={loupe} alt='loupe' />
