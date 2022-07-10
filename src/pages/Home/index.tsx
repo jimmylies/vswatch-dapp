@@ -86,23 +86,15 @@ const Home = ({ category }) => {
       {category === 'English' ? (
         <>
           <div id='project' className='part'>
-            <p className='part-title'>Project</p>
+            <p className='part-title'>What is VSWatch?</p>
             <div className='pres'>
-              <h2
-                onClick={(event) => {
-                  event.currentTarget?.parentElement
-                    ?.querySelectorAll('p')[0]
-                    .classList.toggle('display-pres');
-                }}
-              >
-                ▼ Introduction
-              </h2>
               <p>
-                ValSan is a 3D collection of 2022 Watches. In this Watchpaper,
-                you will discover how the VSWatch team wants to offer you a new
-                NFT experience. The innovation of a title of ownership linked to
-                an object, here a watch, orchestrated by the technology of the
-                Blockchain. <br />
+                ValSan is a 3D collection of 2022 Watches.
+                <br />
+                <br />
+                The innovation of a title of ownership linked to an object, here
+                a watch, orchestrated by the technology of the Blockchain.
+                <br />
                 <br />
                 ValSan is the ambition to give birth to a new way of holding a
                 material good from a dematerialized tool, an NFT.
@@ -113,104 +105,30 @@ const Home = ({ category }) => {
                 transactions performed, security and authenticity without flaw.
                 Our long-term ambition is to become Elrond’s first boutique of
                 reference.
-                <br />
-                <br />
-                Thus, in order to become so, we will focus our development on
-                several important pillars:
-                <br />
-                <br />
-                1 • Having a committed and cohesive community that will be
-                rewarded for its support.
-                <br />
-                2 • Respect the deadlines and the various stages announced on
-                the Watchmap.
-                <br />3 • Working with qualified people, delivering high quality
-                products and services.
               </p>
-              <h2
-                onClick={(event) => {
-                  event.currentTarget?.parentElement
-                    ?.querySelectorAll('p')[1]
-                    .classList.toggle('display-pres');
-                  event.currentTarget?.parentElement
-                    ?.querySelector('.container-supply')
-                    ?.classList.toggle('display-pres');
-                }}
-              >
-                ▼ Collection
-              </h2>
-              <p>
-                Hosted on the Elrond Blockchain, each NFT will be categorized by
-                different attributes (dial, bracelet, colors used), which will
-                establish a level of rarity between each model.
-                <br />
-                <br />
-                We chose to create a first collection of a 2022 supply to mark
-                the first series of VSWatch. The Smart Contract based on the
-                Elrond Blockchain technology will guarantee a random
-                distribution of NFT during the launch of our mint.
-                <br />
-                <br />
-                The first series will consist of 5 models:
-                <br />
-                <br />
-                <span className='dw'>DW (Diawond Watch) : 42 NFTs</span>
-                <br />
-                <span className='gw'>GW (Gold Watch) : 180 NFT</span> <br />
-                <span className='sw'>SW (Silver Watch) : 400 NFTs</span> <br />
-                <span className='bw'>BW (Bronze Watch) : 600 NFTs</span> <br />
-                <span className='cw'>CW (Common Watch) : 800 NFTs</span>
-              </p>
-              <div className='container-supply'>
-                <div className='supply'>
-                  <FontAwesomeIcon icon={faArrowTurnUp} />
-                  <span>Supply: 2022</span>
-                  <FontAwesomeIcon icon={faArrowTurnDown} />
-                </div>
-                <div className='container-details'>
-                  <div>
-                    Presale <br />
-                    500 SFTs <br />
-                    0.75 $EGLD
-                  </div>
-                  <div>
-                    Public sale <br />
-                    1522 SFTs <br />1 $EGLD
-                  </div>
-                </div>
-              </div>
-              <h2
-                onClick={(event) => {
-                  event.currentTarget?.parentElement
-                    ?.querySelectorAll('p')[2]
-                    .classList.toggle('display-pres');
-                  event.currentTarget?.parentElement
-                    ?.querySelectorAll('.sft-video')[0]
-                    .classList.toggle('display-pres');
-                }}
-              >
-                ▼ Watch Box
-              </h2>
+
               <div className='container-watchbox'>
                 <div className='sft-video'>
                   <video src={sft} autoPlay muted loop></video>
                 </div>
                 <p>
-                  In order not to influence the dirty public on sales and to
-                  keep a little suspense on the different models of watches, we
-                  opted for a case sft when we proceed with mint.
-                  <br />
-                  <br />
-                  This case sft will burn on the VSWatch website and the smart
-                  contract will automatically send you a random watch model.
+                  The mint will allow you to receive a watch box thenafter
+                  burning your SFT you will receive one of the 5 watch models.
                   <br />
                   <br />
                   1 SFT = 1 WATCH BOX
-                  <br />1 WATCH BOX = 1 WATCH NFT
+                  <br />
+                  1 WATCH BOX = 1 WATCH NFT
                   <br />
                   <br />
-                  This strategy will allow us to delay but also to avoid a drop
-                  in the price for our holders.
+                  The first series will consist of 5 models:
+                  <br />
+                  <br />
+                  <span className='dw'>DW (Diawond Watch) : 42 NFTs</span>
+                  <span className='gw'>GW (Gold Watch) : 180 NFT</span>
+                  <span className='sw'>SW (Silver Watch) : 400 NFTs</span>
+                  <span className='bw'>BW (Bronze Watch) : 600 NFTs</span>
+                  <span className='cw'>CW (Common Watch) : 800 NFTs</span>
                 </p>
               </div>
               <div className='icons'>
@@ -227,21 +145,13 @@ const Home = ({ category }) => {
           <div id='project' className='part'>
             <p className='part-title'>Projet</p>
             <div className='pres'>
-              <h2
-                onClick={(event) => {
-                  event.currentTarget?.parentElement
-                    ?.querySelectorAll('p')[0]
-                    .classList.toggle('display-pres');
-                }}
-              >
-                ▼ Introduction
-              </h2>
               <p>
-                ValSan est une collection 3D de 2022 montres. Dans ce
-                Watchpaper, vous allez découvrir comment la team VSWatch
-                souhaite vous offrir une nouvelle expérience des NFT.
+                ValSan est une collection 3D de 2022 montres.
+                <br />
+                <br />
                 L’innovation d’un titre de propriété liée à un objet, ici une
-                montre, orchestrée par la technologie de la Blockchain. <br />
+                montre, orchestrée par la technologie de la Blockchain.
+                <br />
                 <br />
                 ValSan c’est l’ambition de donner naissance à une nouvelle
                 manière de détenir un bien matériel à partir d’un outil
@@ -253,108 +163,30 @@ const Home = ({ category }) => {
                 une traçabilité sur les transactions effectuées, une sécurité et
                 une authenticité sans faille. Notre ambition à long terme est de
                 devenir la 1ère boutique de référence de Elrond.
-                <br />
-                <br />
-                Ainsi, pour le devenir, nous allons axer notre développement sur
-                plusieurs piliers importants :
-                <br />
-                <br />
-                1 • Avoir une communauté engagée et soudée qui sera récompensée
-                pour son soutien.
-                <br />
-                2 • Respecter les délais et les différentes étapes annoncés sur
-                la Watchmap.
-                <br />3 • Travailler avec des personnes qualifiées, délivrer des
-                produits et services de haute qualité.
               </p>
-              <h2
-                onClick={(event) => {
-                  event.currentTarget?.parentElement
-                    ?.querySelectorAll('p')[1]
-                    .classList.toggle('display-pres');
-                  event.currentTarget?.parentElement
-                    ?.querySelector('.container-supply')
-                    ?.classList.toggle('display-pres');
-                }}
-              >
-                ▼ Collection
-              </h2>
-              <p>
-                Hébergés sur la Blockchain Elrond, chaque NFT sera catégorisé
-                par différents attributs (cadran, bracelet, couleurs utilisées),
-                ce qui permettra d’établir un niveau de rareté entre chaque
-                modèle.
-                <br />
-                <br />
-                Nous avons fait le choix de créer une première collection d’une
-                supply de 2022 afin de marquer la première série de VSWatch. Le
-                Smart Contract basé sur la technologie de la Blockchain Elrond
-                garantira une distribution aléatoire des NFT lors du lancement
-                de notre mint.
-                <br />
-                <br />
-                La première série sera composée de 5 modèles:
-                <br />
-                <br />
-                <span className='dw'>DW (Diawond Watch) : 42 NFTs</span>
-                <br />
-                <span className='gw'>GW (Gold Watch) : 180 NFT</span> <br />
-                <span className='sw'>SW (Silver Watch) : 400 NFTs</span> <br />
-                <span className='bw'>BW (Bronze Watch) : 600 NFTs</span> <br />
-                <span className='cw'>CW (Common Watch) : 800 NFTs</span>
-              </p>
-              <div className='container-supply'>
-                <div className='supply'>
-                  <FontAwesomeIcon icon={faArrowTurnUp} />
-                  <span>Quantité: 2022</span>
-                  <FontAwesomeIcon icon={faArrowTurnDown} />
-                </div>
-                <div className='container-details'>
-                  <div>
-                    Prévente <br />
-                    500 SFTs <br />
-                    0.75 $EGLD
-                  </div>
-                  <div>
-                    Vente publique <br />
-                    1522 SFTs <br />1 $EGLD
-                  </div>
-                </div>
-              </div>
-              <h2
-                onClick={(event) => {
-                  event.currentTarget?.parentElement
-                    ?.querySelectorAll('p')[2]
-                    .classList.toggle('display-pres');
-                  event.currentTarget?.parentElement
-                    ?.querySelectorAll('.sft-video')[0]
-                    .classList.toggle('display-pres');
-                }}
-              >
-                ▼ Ecrin
-              </h2>
+
               <div className='container-watchbox'>
                 <div className='sft-video'>
                   <video src={sft} autoPlay muted loop></video>
                 </div>
                 <p>
-                  Afin de ne pas influencer la public sale sur les ventes et
-                  pour garder un peu de suspens sur les différents modèles de
-                  montres, nous avons opté pour un SFT d’écrin lorsque nous
-                  procéderons au mint.
+                  Le mint vous permettra de recevoir un écrin, qui, lorsque vous
+                  le brûlerez, sera échangé contre un des 5 modèles de montres.
                   <br />
                   <br />
-                  Ce SFT d’écrin sera à burn sur le site VSWatch et le smart
-                  contract vous renverra automatiquement un modèle de montre
-                  aléatoire
+                  1 SFT = 1 Ecrin
+                  <br />
+                  1 Ecrin = 1 NFT Montre
                   <br />
                   <br />
-                  1 SFT = 1 ECRIN
-                  <br />1 ECRIN = 1 NFT MONTRE
+                  La première série sera composée de 5 modèles:
                   <br />
                   <br />
-                  Cette stratégie nous permettra de temporiser mais aussi
-                  d’éviter une chute du prix pour nos holders.
+                  <span className='dw'>DW (Diawond Watch) : 42 NFTs</span>
+                  <span className='gw'>GW (Gold Watch) : 180 NFT</span>
+                  <span className='sw'>SW (Silver Watch) : 400 NFTs</span>
+                  <span className='bw'>BW (Bronze Watch) : 600 NFTs</span>
+                  <span className='cw'>CW (Common Watch) : 800 NFTs</span>
                 </p>
               </div>
               <div className='icons'>
@@ -370,46 +202,90 @@ const Home = ({ category }) => {
       <div id='watchmap' className='part'>
         <p className='part-title'>WATCHMAP</p>
         <div className='pres'>
-          <div className='roadmap'>
-            <div className='roadmap-item'>
-              <h2>Chap1: Start</h2>
-              <div className='steps'>
-                <span>• VSWatch settle on ElrondNetwork </span>
-                <span>• Socials: Twitter/Discord/Website/Instagram</span>
-                <span>• Opening of the watchlist to the public</span>
-                <span>• Various giveaways and games </span>
-                <span>• Watchpaper v1</span>
-                <span>• Network marketing</span>
-                <span>• First Reveal</span>
+          {category === 'English' ? (
+            <div className='roadmap'>
+              <div className='roadmap-item'>
+                <h2>Chap1: Start</h2>
+                <div className='steps'>
+                  <span>• VSWatch settle on ElrondNetwork </span>
+                  <span>• Socials: Twitter/Discord/Website/Instagram</span>
+                  <span>• Opening of the watchlist to the public</span>
+                  <span>• Various giveaways and games </span>
+                  <span>• Watchpaper v1</span>
+                  <span>• Network marketing</span>
+                  <span>• First Reveal</span>
+                </div>
+              </div>
+              <div className='roadmap-item' id='fixed-elements'>
+                <h2>Chap2: Construction</h2>
+                <div className='steps'>
+                  <span>• Partnerships with Elrond Projects</span>
+                  <span>• Watchpaper v2</span>
+                  <span>• Second Reveal</span>
+                  <span>• Various giveaways and games </span>
+                  <span>• Presale: First drop (WL/OG supply 500)</span>
+                  <span>• Public sale: Second drop (supply 1522)</span>
+                </div>
+              </div>
+              <div className='roadmap-item'>
+                <h2>Chap3: Production</h2>
+                <div className='steps'>
+                  <span>• Rewards for holders </span>
+                  <span>• Lottery</span>
+                  <span>• Watchpaper V3</span>
+                  <span>• Burn of Watch box </span>
+                  <span>• Partnership IRL</span>
+                  <span>• Work on IRL Watch product</span>
+                  <span>• Working on $VST token governance</span>
+                </div>
+              </div>
+              <div className='roadmap-item'>
+                <h2>Chap 4: Launch of our Store!</h2>
               </div>
             </div>
-            <div className='roadmap-item' id='fixed-elements'>
-              <h2>Chap2: Construction</h2>
-              <div className='steps'>
-                <span>• Partnerships with Elrond Projects</span>
-                <span>• Watchpaper v2</span>
-                <span>• Second Reveal</span>
-                <span>• Various giveaways and games </span>
-                <span>• Presale: First drop (WL/OG supply 500)</span>
-                <span>• Public sale: Second drop (supply 1522)</span>
+          ) : (
+            <div className='roadmap'>
+              <div className='roadmap-item'>
+                <h2>Chap1: Lancement</h2>
+                <div className='steps'>
+                  <span>• Lancement de VSWatch sur ElrondNetwork</span>
+                  <span>• Réseaux : Twitter/Discord/Website/Instagram</span>
+                  <span>• Ouverture de la Watchlist au public</span>
+                  <span>• Divers jeux et concours</span>
+                  <span>• Watchpaper v1</span>
+                  <span>• Network marketing</span>
+                  <span>• Premier reveal</span>
+                </div>
+              </div>
+              <div className='roadmap-item' id='fixed-elements'>
+                <h2>Chap2: Construction</h2>
+                <div className='steps'>
+                  <span>• Partenariats avec d’autres projets Elrond</span>
+                  <span>• Watchpaper v2</span>
+                  <span>• Second Reveal</span>
+                  <span>• Divers jeux et concours</span>
+                  <span>• Pré-vente : premier drop (WL / OG supply 500)</span>
+                  <span>• Vente publique: second drop (supply 1522)</span>
+                </div>
+              </div>
+              <div className='roadmap-item'>
+                <h2>Chap3: Production</h2>
+                <div className='steps'>
+                  <span>• Récompenses pour les détenteurs</span>
+                  <span>• Loterie</span>
+                  <span>• Watchpaper V3</span>
+                  <span>• Burn de la Watch Box</span>
+                  <span>• Partenariats IRL</span>
+                  <span>• Lancement de la production des montres IRL</span>
+                  <span>• Lancement du token $VST</span>
+                </div>
+              </div>
+              <div className='roadmap-item'>
+                <h2>Chap 4: Lancement de la boutique!</h2>
               </div>
             </div>
-            <div className='roadmap-item'>
-              <h2>Chap3: Production</h2>
-              <div className='steps'>
-                <span>• Rewards for holders </span>
-                <span>• Lottery</span>
-                <span>• Watchpaper V3</span>
-                <span>• Burn of Watch box </span>
-                <span>• Partnership IRL</span>
-                <span>• Work on IRL Watch product</span>
-                <span>• Working on $VST token governance</span>
-              </div>
-            </div>
-            <div className='roadmap-item'>
-              <h2>Chap 4: Launch of our Store!</h2>
-            </div>
-          </div>
+          )}
+
           <div className='container-clock'>
             <img src={clock} alt='clock' className='clock' />
           </div>
