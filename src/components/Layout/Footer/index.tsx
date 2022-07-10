@@ -11,7 +11,7 @@ const Footer = ({ category }) => {
             The alliance between the technology of the future and a timeless
             creation
           </p>
-          <p className='copyright'>©2022 VsWatch NFT - All rights reserved</p>
+          <p className='copyright'>©2022 VSWatch NFT - All rights reserved</p>
         </>
       ) : (
         <>
@@ -19,7 +19,7 @@ const Footer = ({ category }) => {
             L’alliance entre la technologie du futur et une création
             intemporelle.
           </p>
-          <p className='copyright'>©2022 VsWatch NFT - Tous droits réservés</p>
+          <p className='copyright'>©2022 VSWatch NFT - Tous droits réservés</p>
         </>
       )}
     </footer>

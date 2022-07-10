@@ -108,6 +108,7 @@ const Home = ({ category }) => {
               </p>
 
               <div className='container-watchbox'>
+                <p className='part-title'>VSWATCH BOX</p>
                 <div className='sft-video'>
                   <video src={sft} autoPlay muted loop></video>
                 </div>
@@ -301,67 +302,22 @@ const Home = ({ category }) => {
               <div className='team-member'>
                 <h3>Valentin</h3>
                 <img src={val} alt='Valentin' />
-                <div className='member-info'>
-                  <p>
-                    After obtaining my engineering degree, I specialized in
-                    operational safety in the Naval field for 3 years. Since
-                    2019, I am in the world of Blockchain as an investor at
-                    first and in the NFT since September. I am passionate about
-                    watches, new technologies and motor sport. I handle the
-                    project strategy, administrative/financial tasks and
-                    partnerships of VSWatch.
-                  </p>
-                </div>
+                <div className='member-info'>CEO</div>
               </div>
               <div className='team-member'>
                 <h3>Sandro</h3>
                 <img src={san} alt='Sandro' />
-                <div className='member-info'>
-                  <p>
-                    Formerly in the graphics industry, I am a person passionate
-                    about watches and technology in general and therefore
-                    blockchain. I am one of the creators of the VSWatch project
-                    and My role is to manage the team with the help of Valentin
-                    as well as implement the strategies for the smooth running
-                    of the project and the action plans. I also take care of
-                    community management and sometimes produce some visuals for
-                    communication.
-                  </p>
-                </div>
+                <div className='member-info'>CTO</div>
               </div>
               <div className='team-member'>
                 <h3>Theo</h3>
                 <img src={theo} alt='Théo' />
-                <div className='member-info'>
-                  <p>
-                    Currently in master of industrial design for 4 years, I
-                    specialized in automotive design. I started to take an
-                    interest in cryptocurrencies in 2016, but then in 2019 I
-                    started to invest. Loving beautiful objects, I have always
-                    been interested in watches and have the opportunity to work
-                    on an NFT related to this world is exciting. For my part, I
-                    am part of the design team, I imagine and I model the models
-                    of VSWatch watches.
-                  </p>
-                </div>
+                <div className='member-info'></div>
               </div>
               <div className='team-member'>
                 <h3>Cyrielle</h3>
                 <img src={cyr} alt='Cyrielle' />
-                <div className='member-info'>
-                  <p>
-                    After I got my engineering degree, I became interested in
-                    design and design, I wanted to learn new skills, to see new
-                    horizons. I knew by name the world of cryptocurrencies and
-                    NFT, seeing passing from time to time people talking about
-                    this subject on networks. It was with the VSWatch team that
-                    I had the opportunity to get started. A set of elements,
-                    such as project values, content, and the desire to learn,
-                    pushed me to join the project.To date, I am part of the
-                    design team, where I imagine and model the first NFT of
-                    VSWatch.
-                  </p>
-                </div>
+                <div className='member-info'></div>
               </div>
               <div className='icons'>
                 <img src={hands} alt='hands' />
@@ -380,67 +336,22 @@ const Home = ({ category }) => {
               <div className='team-member'>
                 <h3>Valentin</h3>
                 <img src={val} alt='Valentin' />
-                <div className='member-info'>
-                  <p>
-                    Après avoir obtenu mon diplôme d’ingénieur, je me suis
-                    spécialisé dans la sûreté de fonctionnement dans le domaine
-                    Naval depuis 3 ans. Depuis 2019, je suis dans le monde de la
-                    Blockchain en tant qu’investisseur dans un premier temps et
-                    dans les NFT depuis Septembre. Je suis passionné par les
-                    montres, les nouvelles technologies et par le sport
-                    automobile. Je m’occupe de la stratégie projet, les tâches
-                    administratives/financières et les partenariats de VSWatch.
-                  </p>
-                </div>
+                <div className='member-info'></div>
               </div>
               <div className='team-member'>
                 <h3>Sandro</h3>
                 <img src={san} alt='Sandro' />
-                <div className='member-info'>
-                  <p>
-                    Anciennement dans l’industrie graphique, je suis une
-                    personne passionnée par les montres et la technologie en
-                    général et donc la Blockchain. je suis l’un des créateurs du
-                    projet VSWatch et mon rôle est de manager la team à l’aide
-                    de Valentin ainsi que mettre en place les stratégies pour le
-                    bon déroulement du projet et les plans d’action. Je m’occupe
-                    aussi du community management et parfois de produire
-                    quelques visuels pour la communication.
-                  </p>
-                </div>
+                <div className='member-info'></div>
               </div>
               <div className='team-member'>
                 <h3>Theo</h3>
                 <img src={theo} alt='Théo' />
-                <div className='member-info'>
-                  <p>
-                    Actuellement en master de design industriel depuis 4 ans, je
-                    me suis spécialisé dans le design automobile. J’avais
-                    commencé à m’intéresser aux crypto-monnaies en 2016 mais
-                    c’est qu’ensuite en 2019 que j’ai commencé à investir.
-                    Aimant les beaux objets, je me suis toujours intéressé aux
-                    montres et avoir l’occasion de travailler sur une NFT en
-                    rapport avec ce monde est passionnant. Pour ma part, je fais
-                    partie de l’équipe design, j’imagine et je modélise les
-                    modèles de montres de VSWatch.
-                  </p>
-                </div>
+                <div className='member-info'></div>
               </div>
               <div className='team-member'>
                 <h3>Cyrielle</h3>
                 <img src={cyr} alt='Cyrielle' />
-                <div className='member-info'>
-                  <p>
-                    Après l’obtention de mon diplôme d’ingénieur, je me suis
-                    intéressé au design et à la conception, j’ai voulu acquérir
-                    de nouvelles compétences et voir de nouveaux horizons. C’est
-                    avec l’équipe de VSWatch que j’ai eu l’opportunité de me
-                    lancer. Un ensemble d’éléments, comme les valeurs du projet,
-                    le contenu, et le désir d’apprendre, m’a poussé à rejoindre
-                    le projet. À ce jour, je fais partie de l’équipe design, où
-                    j’imagine et modélise les SFTS de VSWatch.
-                  </p>
-                </div>
+                <div className='member-info'></div>
               </div>
               <div className='icons'>
                 <img src={hands} alt='hands' />

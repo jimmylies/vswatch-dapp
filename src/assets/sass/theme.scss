@@ -37,7 +37,7 @@ html {
   overflow: scroll;
   overflow-x: hidden;
   body {
-    word-spacing: 3px;
+    letter-spacing: 0.001rem;
   }
 }
 
@@ -506,13 +506,14 @@ header {
       .container-watchbox {
         display: flex;
         flex-direction: row;
+        width: 70%;
 
         .sft-video {
           display: flex;
           justify-content: center;
           margin: 2rem 0;
           video {
-            width: 30rem;
+            width: 25rem;
             border-radius: 20px;
           }
         }
@@ -633,12 +634,8 @@ header {
         }
 
         .member-info {
-          display: flex;
-          flex-direction: column;
-          margin: 0 auto;
-          width: 50%;
-          font-size: 1.1rem;
-          width: 400px;
+          text-align: center;
+          font-size: 1.5rem;
         }
       }
     }
@@ -648,6 +645,8 @@ header {
 
 #watchmap {
   z-index: 0;
+  background: #1b1d28 !important;
+  color: #dbdbdb;
 
   .pres {
     display: flex;
@@ -679,6 +678,10 @@ header {
       padding: 1rem;
       color: #dbdbdb;
       width: 800%;
+    }
+
+    .question {
+      text-transform: uppercase;
     }
 
     .answer {
@@ -732,7 +735,7 @@ footer {
   color: #dbdbdb;
   background-color: #1b1d28;
   z-index: 4;
-  padding: 5rem 0;
+  padding: 2rem 0;
 
   img {
     height: 4rem;
