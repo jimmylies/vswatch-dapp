@@ -74,8 +74,8 @@ const Home = ({ category }) => {
             className='watchpaper'
             href={
               category === 'English'
-                ? 'https://drive.google.com/file/d/1ei0QEZcMU7WqZCpft5LuZr6N_kM5u5rJ/view?usp=sharing'
-                : 'https://drive.google.com/file/d/1GBtD1tEp5LJz9rqCdD3hOIOEavfcqwMT/view?usp=sharing'
+                ? 'https://drive.google.com/file/d/1CdC43_b9iJWENBLv7QPTXAKNJjxdXaMw/view?usp=sharing'
+                : 'https://drive.google.com/file/d/10F3Lk6FvDKW6pbgwNZe1DBSrsFuqp9g0/view?usp=sharing'
             }
             target='_blank'
             rel='noreferrer'
