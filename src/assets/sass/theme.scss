@@ -669,9 +669,8 @@ header {
     .container-team {
       display: flex;
       flex-direction: row;
-      flex-wrap: wrap;
       justify-content: center;
-      width: 70%;
+      width: 80%;
       margin: 0 auto;
       font-family: 'Kdam Thmor Pro', sans-serif;
       margin-top: 5rem;
@@ -690,8 +689,8 @@ header {
         }
 
         img {
-          width: 400px;
-          height: 400px;
+          width: 200px;
+          height: 200px;
           margin: 0 auto;
           border: 3px solid #1b1d28;
           border-radius: 20px;
@@ -927,6 +926,9 @@ footer {
       font-size: 1.2rem;
       margin: 0 !important;
     }
+  }
+  .container-team {
+    flex-wrap: wrap;
   }
 }
 
