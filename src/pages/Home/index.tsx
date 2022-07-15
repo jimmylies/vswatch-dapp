@@ -16,15 +16,16 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
 import bag from '../../assets/img/bag.png';
 import chart from '../../assets/img/chart.png';
+import clock from '../../assets/img/clock.png';
 import cyr from '../../assets/img/cyr.png';
 import hands from '../../assets/img/hands.png';
 import idea from '../../assets/img/idea.png';
+import jim from '../../assets/img/jim.png';
 import loupe from '../../assets/img/loupe.png';
 import san from '../../assets/img/san.png';
 import theo from '../../assets/img/theo.png';
 import val from '../../assets/img/val.png';
 import work from '../../assets/img/work.png';
-import clock from '../../assets/img/clock.png';
 
 import sft from '../../assets/vid/sft.mp4';
 
@@ -108,29 +109,31 @@ const Home = ({ category }) => {
               </p>
 
               <div className='container-watchbox'>
-                <p className='part-title'>VSWATCH BOX</p>
                 <div className='sft-video'>
                   <video src={sft} autoPlay muted loop></video>
                 </div>
-                <p>
-                  The mint will allow you to receive a watch box thenafter
-                  burning your SFT you will receive one of the 5 watch models.
-                  <br />
-                  <br />
-                  1 SFT = 1 WATCH BOX
-                  <br />
-                  1 WATCH BOX = 1 WATCH NFT
-                  <br />
-                  <br />
-                  The first series will consist of 5 models:
-                  <br />
-                  <br />
-                  <span className='dw'>DW (Diawond Watch) : 42 NFTs</span>
-                  <span className='gw'>GW (Gold Watch) : 180 NFT</span>
-                  <span className='sw'>SW (Silver Watch) : 400 NFTs</span>
-                  <span className='bw'>BW (Bronze Watch) : 600 NFTs</span>
-                  <span className='cw'>CW (Common Watch) : 800 NFTs</span>
-                </p>
+                <div className='watchbox-right'>
+                  <p className='part-title'>VSWATCH BOX</p>
+                  <p>
+                    The mint will allow you to receive a watch box thenafter
+                    burning your SFT you will receive one of the 5 watch models.
+                    <br />
+                    <br />
+                    1 SFT = 1 WATCH BOX
+                    <br />
+                    1 WATCH BOX = 1 WATCH NFT
+                    <br />
+                    <br />
+                    The first series will consist of 5 models:
+                    <br />
+                    <br />
+                    <span>DW (Diawond Watch) : 42 NFTs</span>
+                    <span>GW (Gold Watch) : 180 NFT</span>
+                    <span>SW (Silver Watch) : 400 NFTs</span>
+                    <span>BW (Bronze Watch) : 600 NFTs</span>
+                    <span>CW (Common Watch) : 800 NFTs</span>
+                  </p>
+                </div>
               </div>
               <div className='icons'>
                 <img src={idea} alt='idea' />
@@ -144,7 +147,7 @@ const Home = ({ category }) => {
       ) : (
         <>
           <div id='project' className='part'>
-            <p className='part-title'>Projet</p>
+            <p className='part-title'>Qu&apos;est-ce que VSWatch?</p>
             <div className='pres'>
               <p>
                 ValSan est une collection 3D de 2022 montres.
@@ -170,25 +173,29 @@ const Home = ({ category }) => {
                 <div className='sft-video'>
                   <video src={sft} autoPlay muted loop></video>
                 </div>
-                <p>
-                  Le mint vous permettra de recevoir un écrin, qui, lorsque vous
-                  le brûlerez, sera échangé contre un des 5 modèles de montres.
-                  <br />
-                  <br />
-                  1 SFT = 1 Ecrin
-                  <br />
-                  1 Ecrin = 1 NFT Montre
-                  <br />
-                  <br />
-                  La première série sera composée de 5 modèles:
-                  <br />
-                  <br />
-                  <span className='dw'>DW (Diawond Watch) : 42 NFTs</span>
-                  <span className='gw'>GW (Gold Watch) : 180 NFT</span>
-                  <span className='sw'>SW (Silver Watch) : 400 NFTs</span>
-                  <span className='bw'>BW (Bronze Watch) : 600 NFTs</span>
-                  <span className='cw'>CW (Common Watch) : 800 NFTs</span>
-                </p>
+                <div className='watchbox-right'>
+                  <p className='part-title'>Ecrin VSWATCH</p>
+                  <p>
+                    Le mint vous permettra de recevoir un écrin, qui, lorsque
+                    vous le brûlerez, sera échangé contre un des 5 modèles de
+                    montres.
+                    <br />
+                    <br />
+                    1 SFT = 1 Ecrin
+                    <br />
+                    1 Ecrin = 1 NFT Montre
+                    <br />
+                    <br />
+                    La première série sera composée de 5 modèles:
+                    <br />
+                    <br />
+                    <span>DW (Diawond Watch) : 42 NFTs</span>
+                    <span>GW (Gold Watch) : 180 NFT</span>
+                    <span>SW (Silver Watch) : 400 NFTs</span>
+                    <span>BW (Bronze Watch) : 600 NFTs</span>
+                    <span>CW (Common Watch) : 800 NFTs</span>
+                  </p>
+                </div>
               </div>
               <div className='icons'>
                 <img src={idea} alt='idea' />
@@ -201,90 +208,120 @@ const Home = ({ category }) => {
         </>
       )}
       <div id='watchmap' className='part'>
-        <p className='part-title'>WATCHMAP</p>
         <div className='pres'>
           {category === 'English' ? (
-            <div className='roadmap'>
-              <div className='roadmap-item'>
-                <h2>Chap1: Start</h2>
-                <div className='steps'>
-                  <span>• VSWatch settle on ElrondNetwork </span>
-                  <span>• Socials: Twitter/Discord/Website/Instagram</span>
-                  <span>• Opening of the watchlist to the public</span>
-                  <span>• Various giveaways and games </span>
-                  <span>• Watchpaper v1</span>
-                  <span>• Network marketing</span>
-                  <span>• First Reveal</span>
+            <>
+              <div className='part-title title-watchmap'>WATCHMAP</div>
+              <div className='roadmap'>
+                <div className='roadmap-item'>
+                  <div className='item-header'>
+                    <h2>Chap1: Start</h2>
+                    <div className='q'>Q1 2022</div>
+                  </div>
+                  <div className='steps'>
+                    <span>• VSWatch settle on ElrondNetwork </span>
+                    <span>• Socials: Twitter/Discord/Website/Instagram</span>
+                    <span>• Opening of the watchlist to the public</span>
+                    <span>• Various giveaways and games </span>
+                    <span>• Watchpaper v1</span>
+                    <span>• Network marketing</span>
+                    <span>• First Reveal</span>
+                  </div>
+                </div>
+                <div className='roadmap-item' id='fixed-elements'>
+                  <div className='item-header'>
+                    <h2>Chap2: Construction</h2>
+                    <div className='q'>Q2 2022</div>
+                  </div>
+                  <div className='steps'>
+                    <span>• Partnerships with Elrond Projects</span>
+                    <span>• Watchpaper v2</span>
+                    <span>• Second Reveal</span>
+                    <span>• Various giveaways and games </span>
+                    <span>• Presale: First drop (WL/OG supply 500)</span>
+                    <span>• Public sale: Second drop (supply 1522)</span>
+                  </div>
+                </div>
+                <div className='roadmap-item'>
+                  <div className='item-header'>
+                    <h2>Chap3: Production</h2>
+                    <div className='q'>Q3-Q4 2022</div>
+                  </div>
+                  <div className='steps'>
+                    <span>• Rewards for holders </span>
+                    <span>• Lottery</span>
+                    <span>• Watchpaper V3</span>
+                    <span>• Burn of Watch box </span>
+                    <span>• Partnership IRL</span>
+                    <span>• Work on IRL Watch product</span>
+                    <span>• Working on $VST token governance</span>
+                  </div>
+                </div>
+                <div className='roadmap-item'>
+                  <div className='item-header'>
+                    <h2>Chap 4: Launch of our Store!</h2>
+                    <div className='q'>2023</div>
+                  </div>
                 </div>
               </div>
-              <div className='roadmap-item' id='fixed-elements'>
-                <h2>Chap2: Construction</h2>
-                <div className='steps'>
-                  <span>• Partnerships with Elrond Projects</span>
-                  <span>• Watchpaper v2</span>
-                  <span>• Second Reveal</span>
-                  <span>• Various giveaways and games </span>
-                  <span>• Presale: First drop (WL/OG supply 500)</span>
-                  <span>• Public sale: Second drop (supply 1522)</span>
-                </div>
-              </div>
-              <div className='roadmap-item'>
-                <h2>Chap3: Production</h2>
-                <div className='steps'>
-                  <span>• Rewards for holders </span>
-                  <span>• Lottery</span>
-                  <span>• Watchpaper V3</span>
-                  <span>• Burn of Watch box </span>
-                  <span>• Partnership IRL</span>
-                  <span>• Work on IRL Watch product</span>
-                  <span>• Working on $VST token governance</span>
-                </div>
-              </div>
-              <div className='roadmap-item'>
-                <h2>Chap 4: Launch of our Store!</h2>
-              </div>
-            </div>
+            </>
           ) : (
-            <div className='roadmap'>
-              <div className='roadmap-item'>
-                <h2>Chap1: Lancement</h2>
-                <div className='steps'>
-                  <span>• Lancement de VSWatch sur ElrondNetwork</span>
-                  <span>• Réseaux : Twitter/Discord/Website/Instagram</span>
-                  <span>• Ouverture de la Watchlist au public</span>
-                  <span>• Divers jeux et concours</span>
-                  <span>• Watchpaper v1</span>
-                  <span>• Network marketing</span>
-                  <span>• Premier reveal</span>
+            <>
+              <div className='part-title title-watchmap'>WATCHMAP</div>
+
+              <div className='roadmap'>
+                <div className='roadmap-item'>
+                  <div className='item-header'>
+                    <h2>Chap1: Lancement</h2>
+                    <div className='q'>Q1 2022</div>
+                  </div>
+                  <div className='steps'>
+                    <span>• Lancement de VSWatch sur ElrondNetwork</span>
+                    <span>• Réseaux : Twitter/Discord/Website/Instagram</span>
+                    <span>• Ouverture de la Watchlist au public</span>
+                    <span>• Divers jeux et concours</span>
+                    <span>• Watchpaper v1</span>
+                    <span>• Network marketing</span>
+                    <span>• Premier reveal</span>
+                  </div>
+                </div>
+                <div className='roadmap-item' id='fixed-elements'>
+                  <div className='item-header'>
+                    <h2>Chap2: Construction</h2>
+                    <div className='q'>Q1 2022</div>
+                  </div>
+                  <div className='steps'>
+                    <span>• Partenariats avec d’autres projets Elrond</span>
+                    <span>• Watchpaper v2</span>
+                    <span>• Second Reveal</span>
+                    <span>• Divers jeux et concours</span>
+                    <span>• Pré-vente : premier drop (WL / OG supply 500)</span>
+                    <span>• Vente publique: second drop (supply 1522)</span>
+                  </div>
+                </div>
+                <div className='roadmap-item'>
+                  <div className='item-header'>
+                    <h2>Chap3: Production</h2>
+                    <div className='q'>Q1 2022</div>
+                  </div>
+                  <div className='steps'>
+                    <span>• Récompenses pour les détenteurs</span>
+                    <span>• Loterie</span>
+                    <span>• Watchpaper V3</span>
+                    <span>• Burn de la Watch Box</span>
+                    <span>• Partenariats IRL</span>
+                    <span>• Lancement de la production des montres IRL</span>
+                    <span>• Lancement du token $VST</span>
+                  </div>
+                </div>
+                <div className='roadmap-item'>
+                  <div className='item-header'>
+                    <h2>Chap 4: Lancement de la boutique!</h2>
+                    <div className='q'>2023</div>
+                  </div>
                 </div>
               </div>
-              <div className='roadmap-item' id='fixed-elements'>
-                <h2>Chap2: Construction</h2>
-                <div className='steps'>
-                  <span>• Partenariats avec d’autres projets Elrond</span>
-                  <span>• Watchpaper v2</span>
-                  <span>• Second Reveal</span>
-                  <span>• Divers jeux et concours</span>
-                  <span>• Pré-vente : premier drop (WL / OG supply 500)</span>
-                  <span>• Vente publique: second drop (supply 1522)</span>
-                </div>
-              </div>
-              <div className='roadmap-item'>
-                <h2>Chap3: Production</h2>
-                <div className='steps'>
-                  <span>• Récompenses pour les détenteurs</span>
-                  <span>• Loterie</span>
-                  <span>• Watchpaper V3</span>
-                  <span>• Burn de la Watch Box</span>
-                  <span>• Partenariats IRL</span>
-                  <span>• Lancement de la production des montres IRL</span>
-                  <span>• Lancement du token $VST</span>
-                </div>
-              </div>
-              <div className='roadmap-item'>
-                <h2>Chap 4: Lancement de la boutique!</h2>
-              </div>
-            </div>
+            </>
           )}
 
           <div className='container-clock'>
@@ -312,12 +349,17 @@ const Home = ({ category }) => {
               <div className='team-member'>
                 <h3>Theo</h3>
                 <img src={theo} alt='Théo' />
-                <div className='member-info'></div>
+                <div className='member-info'>Designer</div>
               </div>
               <div className='team-member'>
                 <h3>Cyrielle</h3>
                 <img src={cyr} alt='Cyrielle' />
-                <div className='member-info'></div>
+                <div className='member-info'>Designer</div>
+              </div>
+              <div className='team-member'>
+                <h3>Jim</h3>
+                <img src={jim} alt='Jim' />
+                <div className='member-info'>Dev</div>
               </div>
               <div className='icons'>
                 <img src={hands} alt='hands' />
@@ -336,22 +378,27 @@ const Home = ({ category }) => {
               <div className='team-member'>
                 <h3>Valentin</h3>
                 <img src={val} alt='Valentin' />
-                <div className='member-info'></div>
+                <div className='member-info'>CEO</div>
               </div>
               <div className='team-member'>
                 <h3>Sandro</h3>
                 <img src={san} alt='Sandro' />
-                <div className='member-info'></div>
+                <div className='member-info'>CTO</div>
               </div>
               <div className='team-member'>
                 <h3>Theo</h3>
                 <img src={theo} alt='Théo' />
-                <div className='member-info'></div>
+                <div className='member-info'>Designer</div>
               </div>
               <div className='team-member'>
                 <h3>Cyrielle</h3>
                 <img src={cyr} alt='Cyrielle' />
-                <div className='member-info'></div>
+                <div className='member-info'>Designer</div>
+              </div>
+              <div className='team-member'>
+                <h3>Jim</h3>
+                <img src={jim} alt='Jim' />
+                <div className='member-info'>Dev</div>
               </div>
               <div className='icons'>
                 <img src={hands} alt='hands' />
