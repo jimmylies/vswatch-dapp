@@ -400,11 +400,11 @@ const Home = ({ category }) => {
                 <img src={jim} alt='Jim' />
                 <div className='member-info'>Dev</div>
               </div>
-              <div className='icons'>
-                <img src={hands} alt='hands' />
-                <img src={work} alt='work' />
-                <img src={bag} alt='bag' />
-              </div>
+            </div>
+            <div className='icons'>
+              <img src={hands} alt='hands' />
+              <img src={work} alt='work' />
+              <img src={bag} alt='bag' />
             </div>
             <div className='bande'></div>
           </div>
