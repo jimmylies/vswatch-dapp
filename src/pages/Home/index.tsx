@@ -325,54 +325,115 @@ const Home = ({ category }) => {
               <div className='part-title title-watchmap'>WATCHMAP</div>
 
               <div className='roadmap'>
-                <div className='roadmap-item'>
-                  <div className='item-header'>
-                    <h2>Chap1: Lancement</h2>
-                    <div className='q'>Q1 2022</div>
+                <div className='item-left'>
+                  <div className='roadmap-item'>
+                    <div className='item-header'>
+                      <h2>Chap1: Lancement</h2>
+                      <div className='q'>Q1 2022</div>
+                    </div>
+                    <div className='steps'>
+                      <span>• Lancement de VSWatch sur ElrondNetwork</span>
+                      <span>• Réseaux : Twitter/Discord/Website/Instagram</span>
+                      <span>• Ouverture de la Watchlist au public</span>
+                      <span>• Divers jeux et concours</span>
+                      <span>• Watchpaper v1</span>
+                      <span>• Network marketing</span>
+                      <span>• Premier reveal</span>
+                    </div>
                   </div>
-                  <div className='steps'>
-                    <span>• Lancement de VSWatch sur ElrondNetwork</span>
-                    <span>• Réseaux : Twitter/Discord/Website/Instagram</span>
-                    <span>• Ouverture de la Watchlist au public</span>
-                    <span>• Divers jeux et concours</span>
-                    <span>• Watchpaper v1</span>
-                    <span>• Network marketing</span>
-                    <span>• Premier reveal</span>
+                  <div className='roadmap-item opacity'>
+                    <div className='item-header'>
+                      <h2>Chap2: Construction</h2>
+                      <div className='q'>Q1 2022</div>
+                    </div>
+                    <div className='steps'>
+                      <span>• Partenariats avec d’autres projets Elrond</span>
+                      <span>• Watchpaper v2</span>
+                      <span>• Second Reveal</span>
+                      <span>• Divers jeux et concours</span>
+                      <span>
+                        • Pré-vente : premier drop (WL / OG supply 500)
+                      </span>
+                      <span>• Vente publique: second drop (supply 1522)</span>
+                    </div>
+                  </div>
+                  <div className='roadmap-item'>
+                    <div className='item-header'>
+                      <h2>Chap3: Production</h2>
+                      <div className='q'>Q1 2022</div>
+                    </div>
+                    <div className='steps'>
+                      <span>• Récompenses pour les détenteurs</span>
+                      <span>• Loterie</span>
+                      <span>• Watchpaper V3</span>
+                      <span>• Burn de la Watch Box</span>
+                      <span>• Partenariats IRL</span>
+                      <span>• Lancement de la production des montres IRL</span>
+                      <span>• Lancement du token $VST</span>
+                    </div>
+                  </div>
+
+                  <div className='roadmap-item opacity'>
+                    <div className='item-header'>
+                      <h2>Chap 4: Lancement de la boutique!</h2>
+                      <div className='q'>2023</div>
+                    </div>
                   </div>
                 </div>
-                <div className='roadmap-item'>
-                  <div className='item-header'>
-                    <h2>Chap2: Construction</h2>
-                    <div className='q'>Q1 2022</div>
+                <div className='light-line'></div>
+                <div className='item-right'>
+                  <div className='roadmap-item opacity'>
+                    <div className='item-header'>
+                      <h2>Chap1: Lancement</h2>
+                      <div className='q'>Q1 2022</div>
+                    </div>
+                    <div className='steps'>
+                      <span>• Lancement de VSWatch sur ElrondNetwork</span>
+                      <span>• Réseaux : Twitter/Discord/Website/Instagram</span>
+                      <span>• Ouverture de la Watchlist au public</span>
+                      <span>• Divers jeux et concours</span>
+                      <span>• Watchpaper v1</span>
+                      <span>• Network marketing</span>
+                      <span>• Premier reveal</span>
+                    </div>
                   </div>
-                  <div className='steps'>
-                    <span>• Partenariats avec d’autres projets Elrond</span>
-                    <span>• Watchpaper v2</span>
-                    <span>• Second Reveal</span>
-                    <span>• Divers jeux et concours</span>
-                    <span>• Pré-vente : premier drop (WL / OG supply 500)</span>
-                    <span>• Vente publique: second drop (supply 1522)</span>
+                  <div className='roadmap-item'>
+                    <div className='item-header'>
+                      <h2>Chap2: Construction</h2>
+                      <div className='q'>Q1 2022</div>
+                    </div>
+                    <div className='steps'>
+                      <span>• Partenariats avec d’autres projets Elrond</span>
+                      <span>• Watchpaper v2</span>
+                      <span>• Second Reveal</span>
+                      <span>• Divers jeux et concours</span>
+                      <span>
+                        • Pré-vente : premier drop (WL / OG supply 500)
+                      </span>
+                      <span>• Vente publique: second drop (supply 1522)</span>
+                    </div>
                   </div>
-                </div>
-                <div className='roadmap-item'>
-                  <div className='item-header'>
-                    <h2>Chap3: Production</h2>
-                    <div className='q'>Q1 2022</div>
+                  <div className='roadmap-item opacity'>
+                    <div className='item-header'>
+                      <h2>Chap3: Production</h2>
+                      <div className='q'>Q1 2022</div>
+                    </div>
+                    <div className='steps'>
+                      <span>• Récompenses pour les détenteurs</span>
+                      <span>• Loterie</span>
+                      <span>• Watchpaper V3</span>
+                      <span>• Burn de la Watch Box</span>
+                      <span>• Partenariats IRL</span>
+                      <span>• Lancement de la production des montres IRL</span>
+                      <span>• Lancement du token $VST</span>
+                    </div>
                   </div>
-                  <div className='steps'>
-                    <span>• Récompenses pour les détenteurs</span>
-                    <span>• Loterie</span>
-                    <span>• Watchpaper V3</span>
-                    <span>• Burn de la Watch Box</span>
-                    <span>• Partenariats IRL</span>
-                    <span>• Lancement de la production des montres IRL</span>
-                    <span>• Lancement du token $VST</span>
-                  </div>
-                </div>
-                <div className='roadmap-item'>
-                  <div className='item-header'>
-                    <h2>Chap 4: Lancement de la boutique!</h2>
-                    <div className='q'>2023</div>
+
+                  <div className='roadmap-item'>
+                    <div className='item-header'>
+                      <h2>Chap 4: Lancement de la boutique!</h2>
+                      <div className='q'>2023</div>
+                    </div>
                   </div>
                 </div>
               </div>

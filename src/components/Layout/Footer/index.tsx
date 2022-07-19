@@ -12,7 +12,8 @@ const Footer = ({ category }) => {
             creation
           </p>
           <p>
-            Contact us at: <span className='underline'>vswatch@gmail.com</span>
+            Contact us at:{' '}
+            <span className='underline'>vswatchclub@gmail.com</span>
           </p>
           <p className='copyright'>©2022 VSWatch NFT - All rights reserved</p>
         </>
@@ -24,7 +25,7 @@ const Footer = ({ category }) => {
           </p>
           <p>
             Contactez nous ici:{' '}
-            <span className='underline'>vswatch@gmail.com</span>
+            <span className='underline'>vswatchclub@gmail.com</span>
           </p>
           <p className='copyright'>©2022 VSWatch NFT - Tous droits réservés</p>
         </>
