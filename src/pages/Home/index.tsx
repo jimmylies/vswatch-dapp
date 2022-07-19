@@ -285,7 +285,11 @@ const Home = ({ category }) => {
                       <span>• First Reveal</span>
                     </div>
                   </div>
-                  <div className='roadmap-item opacity'>
+                  <div
+                    className='roadmap-item opacity'
+                    data-sal='slide-left'
+                    data-sal-duration='800'
+                  >
                     <div className='item-header'>
                       <h2>Chap2: Construction</h2>
                       <div className='q'>Q2 2022</div>
@@ -318,7 +322,11 @@ const Home = ({ category }) => {
                       <span>• Working on $VST token governance</span>
                     </div>
                   </div>
-                  <div className='roadmap-item opacity'>
+                  <div
+                    className='roadmap-item opacity'
+                    data-sal='slide-left'
+                    data-sal-duration='800'
+                  >
                     <div className='item-header'>
                       <h2>Chap 4: Launch of our Store!</h2>
                       <div className='q'>2023</div>
@@ -419,7 +427,11 @@ const Home = ({ category }) => {
                       <span>• Premier reveal</span>
                     </div>
                   </div>
-                  <div className='roadmap-item opacity'>
+                  <div
+                    className='roadmap-item opacity'
+                    data-sal='slide-left'
+                    data-sal-duration='800'
+                  >
                     <div className='item-header'>
                       <h2>Chap2: Construction</h2>
                       <div className='q'>Q1 2022</div>
@@ -455,7 +467,11 @@ const Home = ({ category }) => {
                     </div>
                   </div>
 
-                  <div className='roadmap-item opacity'>
+                  <div
+                    className='roadmap-item opacity'
+                    data-sal='slide-left'
+                    data-sal-duration='800'
+                  >
                     <div className='item-header'>
                       <h2>Chap 4: Lancement de la boutique!</h2>
                       <div className='q'>2023</div>
