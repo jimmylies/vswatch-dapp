@@ -41,7 +41,7 @@ const Home = ({ category }) => {
   window.addEventListener('scroll', () => {
     const scroll = window.pageYOffset;
     const clock = document.querySelectorAll('.clock')[0] as HTMLDivElement;
-    clock.style.transform = `rotate(${scroll / 4}deg)`;
+    clock.style.transform = `rotate(${scroll / 2}deg)`;
     if (scroll < 1000) {
       clock.style.display = 'none';
     } else {
@@ -213,54 +213,109 @@ const Home = ({ category }) => {
             <>
               <div className='part-title title-watchmap'>WATCHMAP</div>
               <div className='roadmap'>
-                <div className='roadmap-item'>
-                  <div className='item-header'>
-                    <h2>Chap1: Start</h2>
-                    <div className='q'>Q1 2022</div>
+                <div className='item-left'>
+                  <div className='roadmap-item'>
+                    <div className='item-header'>
+                      <h2>Chap1: Start</h2>
+                      <div className='q'>Q1 2022</div>
+                    </div>
+                    <div className='steps'>
+                      <span>• VSWatch settle on ElrondNetwork </span>
+                      <span>• Socials: Twitter/Discord/Website/Instagram</span>
+                      <span>• Opening of the watchlist to the public</span>
+                      <span>• Various giveaways and games </span>
+                      <span>• Watchpaper v1</span>
+                      <span>• Network marketing</span>
+                      <span>• First Reveal</span>
+                    </div>
                   </div>
-                  <div className='steps'>
-                    <span>• VSWatch settle on ElrondNetwork </span>
-                    <span>• Socials: Twitter/Discord/Website/Instagram</span>
-                    <span>• Opening of the watchlist to the public</span>
-                    <span>• Various giveaways and games </span>
-                    <span>• Watchpaper v1</span>
-                    <span>• Network marketing</span>
-                    <span>• First Reveal</span>
+                  <div className='roadmap-item opacity'>
+                    <div className='item-header'>
+                      <h2>Chap2: Construction</h2>
+                      <div className='q'>Q2 2022</div>
+                    </div>
+                    <div className='steps'>
+                      <span>• Partnerships with Elrond Projects</span>
+                      <span>• Watchpaper v2</span>
+                      <span>• Second Reveal</span>
+                      <span>• Various giveaways and games </span>
+                      <span>• Presale: First drop (WL/OG supply 500)</span>
+                      <span>• Public sale: Second drop (supply 1522)</span>
+                    </div>
+                  </div>
+                  <div className='roadmap-item'>
+                    <div className='item-header'>
+                      <h2>Chap3: Production</h2>
+                      <div className='q'>Q3-Q4 2022</div>
+                    </div>
+                    <div className='steps'>
+                      <span>• Rewards for holders </span>
+                      <span>• Lottery</span>
+                      <span>• Watchpaper V3</span>
+                      <span>• Burn of Watch box </span>
+                      <span>• Partnership IRL</span>
+                      <span>• Work on IRL Watch product</span>
+                      <span>• Working on $VST token governance</span>
+                    </div>
+                  </div>
+                  <div className='roadmap-item opacity'>
+                    <div className='item-header'>
+                      <h2>Chap 4: Launch of our Store!</h2>
+                      <div className='q'>2023</div>
+                    </div>
                   </div>
                 </div>
-                <div className='roadmap-item' id='fixed-elements'>
-                  <div className='item-header'>
-                    <h2>Chap2: Construction</h2>
-                    <div className='q'>Q2 2022</div>
+                <div className='light-line'></div>
+                <div className='item-right'>
+                  <div className='roadmap-item opacity'>
+                    <div className='item-header'>
+                      <h2>Chap1: Start</h2>
+                      <div className='q'>Q1 2022</div>
+                    </div>
+                    <div className='steps'>
+                      <span>• VSWatch settle on ElrondNetwork </span>
+                      <span>• Socials: Twitter/Discord/Website/Instagram</span>
+                      <span>• Opening of the watchlist to the public</span>
+                      <span>• Various giveaways and games </span>
+                      <span>• Watchpaper v1</span>
+                      <span>• Network marketing</span>
+                      <span>• First Reveal</span>
+                    </div>
                   </div>
-                  <div className='steps'>
-                    <span>• Partnerships with Elrond Projects</span>
-                    <span>• Watchpaper v2</span>
-                    <span>• Second Reveal</span>
-                    <span>• Various giveaways and games </span>
-                    <span>• Presale: First drop (WL/OG supply 500)</span>
-                    <span>• Public sale: Second drop (supply 1522)</span>
+                  <div className='roadmap-item'>
+                    <div className='item-header'>
+                      <h2>Chap2: Construction</h2>
+                      <div className='q'>Q2 2022</div>
+                    </div>
+                    <div className='steps'>
+                      <span>• Partnerships with Elrond Projects</span>
+                      <span>• Watchpaper v2</span>
+                      <span>• Second Reveal</span>
+                      <span>• Various giveaways and games </span>
+                      <span>• Presale: First drop (WL/OG supply 500)</span>
+                      <span>• Public sale: Second drop (supply 1522)</span>
+                    </div>
                   </div>
-                </div>
-                <div className='roadmap-item'>
-                  <div className='item-header'>
-                    <h2>Chap3: Production</h2>
-                    <div className='q'>Q3-Q4 2022</div>
+                  <div className='roadmap-item opacity'>
+                    <div className='item-header'>
+                      <h2>Chap3: Production</h2>
+                      <div className='q'>Q3-Q4 2022</div>
+                    </div>
+                    <div className='steps'>
+                      <span>• Rewards for holders </span>
+                      <span>• Lottery</span>
+                      <span>• Watchpaper V3</span>
+                      <span>• Burn of Watch box </span>
+                      <span>• Partnership IRL</span>
+                      <span>• Work on IRL Watch product</span>
+                      <span>• Working on $VST token governance</span>
+                    </div>
                   </div>
-                  <div className='steps'>
-                    <span>• Rewards for holders </span>
-                    <span>• Lottery</span>
-                    <span>• Watchpaper V3</span>
-                    <span>• Burn of Watch box </span>
-                    <span>• Partnership IRL</span>
-                    <span>• Work on IRL Watch product</span>
-                    <span>• Working on $VST token governance</span>
-                  </div>
-                </div>
-                <div className='roadmap-item'>
-                  <div className='item-header'>
-                    <h2>Chap 4: Launch of our Store!</h2>
-                    <div className='q'>2023</div>
+                  <div className='roadmap-item'>
+                    <div className='item-header'>
+                      <h2>Chap 4: Launch of our Store!</h2>
+                      <div className='q'>2023</div>
+                    </div>
                   </div>
                 </div>
               </div>
@@ -285,7 +340,7 @@ const Home = ({ category }) => {
                     <span>• Premier reveal</span>
                   </div>
                 </div>
-                <div className='roadmap-item' id='fixed-elements'>
+                <div className='roadmap-item'>
                   <div className='item-header'>
                     <h2>Chap2: Construction</h2>
                     <div className='q'>Q1 2022</div>

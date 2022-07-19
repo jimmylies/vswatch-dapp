@@ -593,8 +593,8 @@ header {
 
     .roadmap {
       display: flex;
-      flex-direction: column;
-      justify-content: center;
+      flex-direction: row;
+      justify-content: space-between;
       align-items: center;
       width: 95%;
 
@@ -602,9 +602,31 @@ header {
         align-items: center;
       }
 
+      .item-left {
+        width: 48%;
+        height: 1600px;
+      }
+
+      .light-line {
+        display: block;
+        width: 5px;
+
+        height: 1600px;
+        background-color: #dbdbdb;
+        margin: 0 2rem;
+      }
+      .item-right {
+        width: 48%;
+        height: 1600px;
+      }
+
+      .opacity {
+        opacity: 0;
+      }
+
       .roadmap-item {
         padding: 2rem;
-        margin: 0 0 10rem 0;
+        margin: 2rem 0;
         background-color: #1b1d28;
         border: 2px solid white;
         border-radius: 10px;
@@ -653,16 +675,17 @@ header {
 
     .container-clock {
       position: fixed;
-      top: 30vh;
+      top: 50vh;
       display: flex;
       justify-content: center;
       align-items: center;
-      width: 80%;
+      width: 300px;
       z-index: 2;
 
       img {
         width: 15%;
         display: none;
+        filter: invert(1);
       }
     }
 
@@ -995,6 +1018,27 @@ footer {
         font-size: 1rem;
       }
     }
+    .roadmap {
+      justify-content: center !important;
+
+      .item-left {
+        height: auto !important;
+      }
+
+      .light-line,
+      .item-right {
+        display: none !important;
+      }
+      .roadmap-item {
+        margin: 6rem 0 4rem 0 !important;
+      }
+      .opacity {
+        opacity: 1 !important;
+      }
+    }
+    .container-clock {
+      display: none !important;
+    }
   }
 }
 
@@ -1014,10 +1058,6 @@ footer {
     .catchphrase {
       font-size: 1.2rem !important;
     }
-  }
-
-  .container-clock {
-    display: none !important;
   }
 
   .roadmap {
