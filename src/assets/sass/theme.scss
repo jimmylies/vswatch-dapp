@@ -818,6 +818,15 @@ header {
   z-index: 3;
 }
 
+.bande-watchmap {
+  position: relative;
+  height: 50px;
+  width: 100%;
+  background-color: #1b1d28;
+  padding-top: 7rem;
+  z-index: 500;
+}
+
 /* Footer */
 footer {
   position: relative;

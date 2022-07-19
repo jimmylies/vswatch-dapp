@@ -8,11 +8,7 @@ import * as React from 'react';
 // } from '@elrondnetwork/dapp-core';
 // import { Link } from 'react-router-dom';
 
-import {
-  faArrowTurnDown,
-  faArrowTurnUp
-} from '@fortawesome/free-solid-svg-icons';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import sal from 'sal.js';
 
 import bag from '../../assets/img/bag.png';
 import chart from '../../assets/img/chart.png';
@@ -87,9 +83,15 @@ const Home = ({ category }) => {
       {category === 'English' ? (
         <>
           <div id='project' className='part'>
-            <p className='part-title'>What is VSWatch?</p>
+            <p
+              className='part-title'
+              data-sal='slide-up'
+              data-sal-duration='800'
+            >
+              What is VSWatch?
+            </p>
             <div className='pres'>
-              <p>
+              <p data-sal='slide-up' data-sal-duration='800'>
                 ValSan is a 3D collection of 2022 Watches.
                 <br />
                 <br />
@@ -108,7 +110,11 @@ const Home = ({ category }) => {
                 reference.
               </p>
 
-              <div className='container-watchbox'>
+              <div
+                className='container-watchbox'
+                data-sal='slide-up'
+                data-sal-duration='800'
+              >
                 <div className='sft-video'>
                   <video src={sft} autoPlay muted loop></video>
                 </div>
@@ -136,9 +142,24 @@ const Home = ({ category }) => {
                 </div>
               </div>
               <div className='icons'>
-                <img src={idea} alt='idea' />
-                <img src={loupe} alt='loupe' />
-                <img src={chart} alt='chart' />
+                <img
+                  src={idea}
+                  alt='idea'
+                  data-sal='slide-up'
+                  data-sal-duration='400'
+                />
+                <img
+                  src={loupe}
+                  alt='loupe'
+                  data-sal='slide-up'
+                  data-sal-duration='1000'
+                />
+                <img
+                  src={chart}
+                  alt='chart'
+                  data-sal='slide-up'
+                  data-sal-duration='1600'
+                />
               </div>
             </div>
             <div className='bande'></div>
@@ -147,8 +168,14 @@ const Home = ({ category }) => {
       ) : (
         <>
           <div id='project' className='part'>
-            <p className='part-title'>Qu&apos;est-ce que VSWatch?</p>
-            <div className='pres'>
+            <p
+              className='part-title'
+              data-sal='slide-up'
+              data-sal-duration='800'
+            >
+              Qu&apos;est-ce que VSWatch?
+            </p>
+            <div className='pres' data-sal='slide-up' data-sal-duration='800'>
               <p>
                 ValSan est une collection 3D de 2022 montres.
                 <br />
@@ -169,7 +196,11 @@ const Home = ({ category }) => {
                 devenir la 1ère boutique de référence de Elrond.
               </p>
 
-              <div className='container-watchbox'>
+              <div
+                className='container-watchbox'
+                data-sal='slide-up'
+                data-sal-duration='800'
+              >
                 <div className='sft-video'>
                   <video src={sft} autoPlay muted loop></video>
                 </div>
@@ -198,9 +229,24 @@ const Home = ({ category }) => {
                 </div>
               </div>
               <div className='icons'>
-                <img src={idea} alt='idea' />
-                <img src={loupe} alt='loupe' />
-                <img src={chart} alt='chart' />
+                <img
+                  src={idea}
+                  alt='idea'
+                  data-sal='slide-up'
+                  data-sal-duration='400'
+                />
+                <img
+                  src={loupe}
+                  alt='loupe'
+                  data-sal='slide-up'
+                  data-sal-duration='1000'
+                />
+                <img
+                  src={chart}
+                  alt='chart'
+                  data-sal='slide-up'
+                  data-sal-duration='1600'
+                />
               </div>
             </div>
             <div className='bande'></div>
@@ -211,10 +257,20 @@ const Home = ({ category }) => {
         <div className='pres'>
           {category === 'English' ? (
             <>
-              <div className='part-title title-watchmap'>WATCHMAP</div>
+              <div
+                className='part-title title-watchmap'
+                data-sal='slide-up'
+                data-sal-duration='200'
+              >
+                WATCHMAP
+              </div>
               <div className='roadmap'>
                 <div className='item-left'>
-                  <div className='roadmap-item'>
+                  <div
+                    className='roadmap-item'
+                    data-sal='slide-right'
+                    data-sal-duration='800'
+                  >
                     <div className='item-header'>
                       <h2>Chap1: Start</h2>
                       <div className='q'>Q1 2022</div>
@@ -243,7 +299,11 @@ const Home = ({ category }) => {
                       <span>• Public sale: Second drop (supply 1522)</span>
                     </div>
                   </div>
-                  <div className='roadmap-item'>
+                  <div
+                    className='roadmap-item'
+                    data-sal='slide-right'
+                    data-sal-duration='800'
+                  >
                     <div className='item-header'>
                       <h2>Chap3: Production</h2>
                       <div className='q'>Q3-Q4 2022</div>
@@ -282,7 +342,11 @@ const Home = ({ category }) => {
                       <span>• First Reveal</span>
                     </div>
                   </div>
-                  <div className='roadmap-item'>
+                  <div
+                    className='roadmap-item'
+                    data-sal='slide-left'
+                    data-sal-duration='800'
+                  >
                     <div className='item-header'>
                       <h2>Chap2: Construction</h2>
                       <div className='q'>Q2 2022</div>
@@ -311,7 +375,11 @@ const Home = ({ category }) => {
                       <span>• Working on $VST token governance</span>
                     </div>
                   </div>
-                  <div className='roadmap-item'>
+                  <div
+                    className='roadmap-item'
+                    data-sal='slide-left'
+                    data-sal-duration='800'
+                  >
                     <div className='item-header'>
                       <h2>Chap 4: Launch of our Store!</h2>
                       <div className='q'>2023</div>
@@ -322,11 +390,21 @@ const Home = ({ category }) => {
             </>
           ) : (
             <>
-              <div className='part-title title-watchmap'>WATCHMAP</div>
+              <div
+                className='part-title title-watchmap'
+                data-sal='slide-up'
+                data-sal-duration='200'
+              >
+                WATCHMAP
+              </div>
 
               <div className='roadmap'>
                 <div className='item-left'>
-                  <div className='roadmap-item'>
+                  <div
+                    className='roadmap-item'
+                    data-sal='slide-right'
+                    data-sal-duration='800'
+                  >
                     <div className='item-header'>
                       <h2>Chap1: Lancement</h2>
                       <div className='q'>Q1 2022</div>
@@ -357,7 +435,11 @@ const Home = ({ category }) => {
                       <span>• Vente publique: second drop (supply 1522)</span>
                     </div>
                   </div>
-                  <div className='roadmap-item'>
+                  <div
+                    className='roadmap-item'
+                    data-sal='slide-right'
+                    data-sal-duration='800'
+                  >
                     <div className='item-header'>
                       <h2>Chap3: Production</h2>
                       <div className='q'>Q1 2022</div>
@@ -397,7 +479,11 @@ const Home = ({ category }) => {
                       <span>• Premier reveal</span>
                     </div>
                   </div>
-                  <div className='roadmap-item'>
+                  <div
+                    className='roadmap-item'
+                    data-sal='slide-left'
+                    data-sal-duration='800'
+                  >
                     <div className='item-header'>
                       <h2>Chap2: Construction</h2>
                       <div className='q'>Q1 2022</div>
@@ -429,7 +515,11 @@ const Home = ({ category }) => {
                     </div>
                   </div>
 
-                  <div className='roadmap-item'>
+                  <div
+                    className='roadmap-item'
+                    data-sal='slide-left'
+                    data-sal-duration='800'
+                  >
                     <div className='item-header'>
                       <h2>Chap 4: Lancement de la boutique!</h2>
                       <div className='q'>2023</div>
@@ -445,43 +535,84 @@ const Home = ({ category }) => {
           </div>
         </div>
 
-        <div className='bande'></div>
+        <div className='bande-watchmap'></div>
       </div>
       {category === 'English' ? (
         <>
           <div id='team' className='part'>
-            <p className='part-title'>TEAM</p>
+            <p
+              className='part-title'
+              data-sal='slide-up'
+              data-sal-duration='800'
+            >
+              TEAM
+            </p>
             <div className='container-team'>
-              <div className='team-member'>
+              <div
+                className='team-member'
+                data-sal='slide-up'
+                data-sal-duration='800'
+              >
                 <h3>Valentin</h3>
                 <img src={val} alt='Valentin' />
                 <div className='member-info'>CEO</div>
               </div>
-              <div className='team-member'>
+              <div
+                className='team-member'
+                data-sal='slide-up'
+                data-sal-duration='800'
+              >
                 <h3>Sandro</h3>
                 <img src={san} alt='Sandro' />
                 <div className='member-info'>CTO</div>
               </div>
-              <div className='team-member'>
+              <div
+                className='team-member'
+                data-sal='slide-up'
+                data-sal-duration='800'
+              >
                 <h3>Theo</h3>
                 <img src={theo} alt='Théo' />
                 <div className='member-info'>Designer</div>
               </div>
-              <div className='team-member'>
+              <div
+                className='team-member'
+                data-sal='slide-up'
+                data-sal-duration='800'
+              >
                 <h3>Cyrielle</h3>
                 <img src={cyr} alt='Cyrielle' />
                 <div className='member-info'>Designer</div>
               </div>
-              <div className='team-member'>
+              <div
+                className='team-member'
+                data-sal='slide-up'
+                data-sal-duration='800'
+              >
                 <h3>Jim</h3>
                 <img src={jim} alt='Jim' />
                 <div className='member-info'>Dev</div>
               </div>
             </div>
             <div className='icons'>
-              <img src={hands} alt='hands' />
-              <img src={work} alt='work' />
-              <img src={bag} alt='bag' />
+              <img
+                src={hands}
+                alt='hands'
+                data-sal='slide-up'
+                data-sal-duration='400'
+              />
+              <img
+                src={work}
+                alt='work'
+                data-sal='slide-up'
+                data-sal-duration='1000'
+              />
+              <img
+                src={bag}
+                alt='bag'
+                data-sal='slide-up'
+                data-sal-duration='1600'
+              />
             </div>
             <div className='bande'></div>
           </div>
@@ -489,38 +620,79 @@ const Home = ({ category }) => {
       ) : (
         <>
           <div id='team' className='part'>
-            <p className='part-title'>EQUIPE</p>
+            <p
+              className='part-title'
+              data-sal='slide-up'
+              data-sal-duration='800'
+            >
+              EQUIPE
+            </p>
             <div className='container-team'>
-              <div className='team-member'>
+              <div
+                className='team-member'
+                data-sal='slide-up'
+                data-sal-duration='800'
+              >
                 <h3>Valentin</h3>
                 <img src={val} alt='Valentin' />
                 <div className='member-info'>CEO</div>
               </div>
-              <div className='team-member'>
+              <div
+                className='team-member'
+                data-sal='slide-up'
+                data-sal-duration='800'
+              >
                 <h3>Sandro</h3>
                 <img src={san} alt='Sandro' />
                 <div className='member-info'>CTO</div>
               </div>
-              <div className='team-member'>
+              <div
+                className='team-member'
+                data-sal='slide-up'
+                data-sal-duration='800'
+              >
                 <h3>Theo</h3>
                 <img src={theo} alt='Théo' />
                 <div className='member-info'>Designer</div>
               </div>
-              <div className='team-member'>
+              <div
+                className='team-member'
+                data-sal='slide-up'
+                data-sal-duration='800'
+              >
                 <h3>Cyrielle</h3>
                 <img src={cyr} alt='Cyrielle' />
                 <div className='member-info'>Designer</div>
               </div>
-              <div className='team-member'>
+              <div
+                className='team-member'
+                data-sal='slide-up'
+                data-sal-duration='800'
+              >
                 <h3>Jim</h3>
                 <img src={jim} alt='Jim' />
                 <div className='member-info'>Dev</div>
               </div>
             </div>
             <div className='icons'>
-              <img src={hands} alt='hands' />
-              <img src={work} alt='work' />
-              <img src={bag} alt='bag' />
+              <img
+                src={hands}
+                alt='hands'
+                data-sal='slide-up'
+                data-sal-duration='400'
+              />
+              <img
+                src={work}
+                alt='work'
+                data-sal='slide-up'
+                data-sal-duration='1000'
+              />
+              <img
+                src={bag}
+                alt='bag'
+                data-sal='slide-up'
+                data-sal-duration='1600'
+              />
             </div>
             <div className='bande'></div>
           </div>
@@ -530,8 +702,18 @@ const Home = ({ category }) => {
       {category === 'English' ? (
         <>
           <div id='faq' className='part'>
-            <p className='part-title'>FAQ</p>
-            <div className='faq-container'>
+            <p
+              className='part-title'
+              data-sal='slide-up'
+              data-sal-duration='800'
+            >
+              FAQ
+            </p>
+            <div
+              className='faq-container'
+              data-sal='slide-up'
+              data-sal-duration='800'
+            >
               <div
                 className='faq'
                 onClick={(event: any) => {
@@ -628,8 +810,18 @@ const Home = ({ category }) => {
       ) : (
         <>
           <div id='faq' className='part'>
-            <p className='part-title'>FAQ</p>
-            <div className='faq-container'>
+            <p
+              className='part-title'
+              data-sal='slide-up'
+              data-sal-duration='800'
+            >
+              FAQ
+            </p>
+            <div
+              className='faq-container'
+              data-sal='slide-up'
+              data-sal-duration='800'
+            >
               <div
                 className='faq'
                 onClick={(event: any) => {
