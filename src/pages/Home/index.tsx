@@ -580,7 +580,7 @@ const Home = ({ category }) => {
               >
                 <h3>Sandro</h3>
                 <img src={san} alt='Sandro' />
-                <div className='member-info'>CTO</div>
+                <div className='member-info'>CEO</div>
               </div>
               <div
                 className='team-member'
@@ -660,7 +660,7 @@ const Home = ({ category }) => {
               >
                 <h3>Sandro</h3>
                 <img src={san} alt='Sandro' />
-                <div className='member-info'>CTO</div>
+                <div className='member-info'>CEO</div>
               </div>
               <div
                 className='team-member'
