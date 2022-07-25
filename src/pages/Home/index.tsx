@@ -175,8 +175,8 @@ const Home = ({ category }) => {
             >
               Qu&apos;est-ce que VSWatch?
             </p>
-            <div className='pres' data-sal='slide-up' data-sal-duration='800'>
-              <p>
+            <div className='pres'>
+              <p data-sal='slide-up' data-sal-duration='800'>
                 ValSan est une collection 3D de 2022 montres.
                 <br />
                 <br />
