@@ -651,11 +651,12 @@ header {
             margin-bottom: 0;
           }
           .q {
+            min-width: 4.2rem;
             padding: 0.2rem 0.4rem;
             background-color: white;
             border-radius: 5px;
             color: #1b1d28;
-            margin-left: 2rem;
+            margin-left: 1rem;
           }
         }
 
@@ -911,7 +912,7 @@ footer {
           background-color: #6d6d6d;
 
           div:last-child {
-            display: flex;
+            display: flex !important;
           }
         }
       }

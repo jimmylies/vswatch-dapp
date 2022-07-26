@@ -268,7 +268,7 @@ const Home = ({ category }) => {
                 <div className='item-left'>
                   <div
                     className='roadmap-item'
-                    data-sal='slide-right'
+                    data-sal='slide-up'
                     data-sal-duration='800'
                   >
                     <div className='item-header'>
@@ -287,7 +287,7 @@ const Home = ({ category }) => {
                   </div>
                   <div
                     className='roadmap-item opacity'
-                    data-sal='slide-left'
+                    data-sal='slide-up'
                     data-sal-duration='800'
                   >
                     <div className='item-header'>
@@ -305,7 +305,7 @@ const Home = ({ category }) => {
                   </div>
                   <div
                     className='roadmap-item'
-                    data-sal='slide-right'
+                    data-sal='slide-up'
                     data-sal-duration='800'
                   >
                     <div className='item-header'>
@@ -324,7 +324,7 @@ const Home = ({ category }) => {
                   </div>
                   <div
                     className='roadmap-item opacity'
-                    data-sal='slide-left'
+                    data-sal='slide-up'
                     data-sal-duration='800'
                   >
                     <div className='item-header'>
@@ -352,7 +352,7 @@ const Home = ({ category }) => {
                   </div>
                   <div
                     className='roadmap-item'
-                    data-sal='slide-left'
+                    data-sal='slide-up'
                     data-sal-duration='800'
                   >
                     <div className='item-header'>
@@ -385,7 +385,7 @@ const Home = ({ category }) => {
                   </div>
                   <div
                     className='roadmap-item'
-                    data-sal='slide-left'
+                    data-sal='slide-up'
                     data-sal-duration='800'
                   >
                     <div className='item-header'>
@@ -410,7 +410,7 @@ const Home = ({ category }) => {
                 <div className='item-left'>
                   <div
                     className='roadmap-item'
-                    data-sal='slide-right'
+                    data-sal='slide-up'
                     data-sal-duration='800'
                   >
                     <div className='item-header'>
@@ -429,7 +429,7 @@ const Home = ({ category }) => {
                   </div>
                   <div
                     className='roadmap-item opacity'
-                    data-sal='slide-left'
+                    data-sal='slide-up'
                     data-sal-duration='800'
                   >
                     <div className='item-header'>
@@ -449,7 +449,7 @@ const Home = ({ category }) => {
                   </div>
                   <div
                     className='roadmap-item'
-                    data-sal='slide-right'
+                    data-sal='slide-up'
                     data-sal-duration='800'
                   >
                     <div className='item-header'>
@@ -469,7 +469,7 @@ const Home = ({ category }) => {
 
                   <div
                     className='roadmap-item opacity'
-                    data-sal='slide-left'
+                    data-sal='slide-up'
                     data-sal-duration='800'
                   >
                     <div className='item-header'>
@@ -497,7 +497,7 @@ const Home = ({ category }) => {
                   </div>
                   <div
                     className='roadmap-item'
-                    data-sal='slide-left'
+                    data-sal='slide-up'
                     data-sal-duration='800'
                   >
                     <div className='item-header'>
@@ -533,7 +533,7 @@ const Home = ({ category }) => {
 
                   <div
                     className='roadmap-item'
-                    data-sal='slide-left'
+                    data-sal='slide-up'
                     data-sal-duration='800'
                   >
                     <div className='item-header'>
