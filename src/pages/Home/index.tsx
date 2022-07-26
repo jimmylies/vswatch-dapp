@@ -273,7 +273,7 @@ const Home = ({ category }) => {
                   >
                     <div className='item-header'>
                       <h2>Chap1: Start</h2>
-                      <div className='q'>Q1 2022</div>
+                      <div className='q'>Q2 2022</div>
                     </div>
                     <div className='steps'>
                       <span>• VSWatch settle on ElrondNetwork </span>
@@ -292,7 +292,7 @@ const Home = ({ category }) => {
                   >
                     <div className='item-header'>
                       <h2>Chap2: Construction</h2>
-                      <div className='q'>Q2 2022</div>
+                      <div className='q'>Q3 2022</div>
                     </div>
                     <div className='steps'>
                       <span>• Partnerships with Elrond Projects</span>
@@ -310,7 +310,7 @@ const Home = ({ category }) => {
                   >
                     <div className='item-header'>
                       <h2>Chap3: Production</h2>
-                      <div className='q'>Q3-Q4 2022</div>
+                      <div className='q'>Q1-Q2 2023</div>
                     </div>
                     <div className='steps'>
                       <span>• Rewards for holders </span>
@@ -329,7 +329,7 @@ const Home = ({ category }) => {
                   >
                     <div className='item-header'>
                       <h2>Chap 4: Launch of our Store!</h2>
-                      <div className='q'>2023</div>
+                      <div className='q'>Q3-Q4 2023</div>
                     </div>
                   </div>
                 </div>
@@ -338,7 +338,7 @@ const Home = ({ category }) => {
                   <div className='roadmap-item opacity'>
                     <div className='item-header'>
                       <h2>Chap1: Start</h2>
-                      <div className='q'>Q1 2022</div>
+                      <div className='q'>Q2 2022</div>
                     </div>
                     <div className='steps'>
                       <span>• VSWatch settle on ElrondNetwork </span>
@@ -357,7 +357,7 @@ const Home = ({ category }) => {
                   >
                     <div className='item-header'>
                       <h2>Chap2: Construction</h2>
-                      <div className='q'>Q2 2022</div>
+                      <div className='q'>Q3 2022</div>
                     </div>
                     <div className='steps'>
                       <span>• Partnerships with Elrond Projects</span>
@@ -371,7 +371,7 @@ const Home = ({ category }) => {
                   <div className='roadmap-item opacity'>
                     <div className='item-header'>
                       <h2>Chap3: Production</h2>
-                      <div className='q'>Q3-Q4 2022</div>
+                      <div className='q'>Q1-Q2 2023</div>
                     </div>
                     <div className='steps'>
                       <span>• Rewards for holders </span>
@@ -390,7 +390,7 @@ const Home = ({ category }) => {
                   >
                     <div className='item-header'>
                       <h2>Chap 4: Launch of our Store!</h2>
-                      <div className='q'>2023</div>
+                      <div className='q'>Q3-Q4 2023</div>
                     </div>
                   </div>
                 </div>
